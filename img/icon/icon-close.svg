@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon / icon-close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon-/-icon-close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="line-top" fill="#000000" transform="translate(25.000000, 25.000000) rotate(45.000000) translate(-25.000000, -25.000000) " x="12" y="24" width="26" height="2" rx="1"></rect>
+        <rect id="line-down" fill="#000000" transform="translate(25.000000, 25.000000) rotate(-45.000000) translate(-25.000000, -25.000000) " x="12" y="24" width="26" height="2" rx="1"></rect>
+    </g>
+</svg>
