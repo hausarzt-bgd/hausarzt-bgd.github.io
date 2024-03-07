@@ -2,10 +2,10 @@
   id : de
   link : 
   label : DE
--
-  id : en
-  link : /en
-  label : EN
+#-
+  #id : en
+  #link : /en
+  #label : EN
 #-
   #id : zh
   #label : 繁體中文

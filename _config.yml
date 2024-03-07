@@ -1,14 +1,14 @@
 # Site settings
-title: "KJ Bondes"
-author: "KJ Bondes"
-email: kuanju.bondes@posteo.de
+title: "Hausärztliche Gemeinschaftspraxis"
+author: "Hausärztliche Gemeinschaftspraxis"
+email: info@hausarzt-bgd.de
 description: home.description
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://kjbondes.github.io"
+url: "https://hausarzt-bgd.github.io"
 
-github_username:  "kjbondes"
-linkedin: "https://www.linkedin.com/in/kuanjupan/"
-xing: "https://www.xing.com/profile/KuanJu_Bondes/"
+github_username: "hausarzt-bgd"
+linkedin: " "
+xing: " "
 
 exclude: ["site_publish.sh", ".jekyll-cache"]  
 
@@ -25,6 +25,6 @@ plugins:
   - jekyll-multiple-languages-plugin
 
 # jekyll-multiple-languages-plugin settings:
-languages: ["de", "en"]
+languages: ["de"]
 exclude_from_localizations: ["css", "js", "img", "fonts", "download", "favicon.ico"]
 default_locale_in_subfolder: false
