@@ -1,0 +1,19 @@
+<script>
+    // When the DOM is ready, run this function
+    $( document ).ready(function() {
+        $('.persona-carousel').carousel({
+            pauseOnHover: true,
+            interval: 2000
+        });
+    });
+</script>
+    
+<div id="yumiwi-persona">
+    <div class="persona-carousel carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <img class="item Grid-column active" src="{{ site.baseurl_root }}/img/yumiwi/persona.jpg" />
+            <img class="item Grid-column" src="{{ site.baseurl_root }}/img/yumiwi/user_journey_1.jpg" />
+            <img class="item Grid-column" src="{{ site.baseurl_root }}/img/yumiwi/user_journey_2.jpg" />
+        </div>
+    </div>
+</div>

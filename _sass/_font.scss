@@ -1,0 +1,109 @@
+/* fonts.scss */
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Molengo');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+/* 100 Thin / 200 Extra Light / 300 Light / 400 Regular / 500 Medium / 600 Semibold / 700 Bold / 800 Extra Bold / 900 Black */
+
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher/Philosopher-Regular.ttf");
+  font-weight:400;
+}
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher/Philosopher-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Molengo";
+  src: url("../fonts/Molengo/Molengo-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+  font-weight: 400;
+}
+
+$font-main: "Molengo", sans-serif;
+$font-heading: "Philosopher", serif;
+$font-alt: "Mobtserrat", sans-serif;
+
+
+body {
+  font-family: $font-main;
+  color: black;
+}
+h1, h2, h3, h4, h5, h6, p, br, ul, li {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.5;
+}
+br {
+  height: 10px;
+}
+
+
+
+h1 { //page title
+	font-family: $font-heading;
+  font-size: 27px;
+  line-height: 1.2;
+}
+h2 { //logo, project title
+  font-family: $font-heading;
+  font-size: 24px;
+  line-height: 1.2;
+}
+h3 { //title
+	font-size: 20px;
+  letter-spacing: 0.5px;
+}
+h4 { //subtitle(+p), content(+h5 description as title)
+	font-size: 18px;
+  letter-spacing: 0.5px;
+}
+h5 { //description
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+h6 { //button & navigation & footer
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+p, li {
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+  &.note {
+    font-style: italic;
+    color: $black-50;
+  }
+}
+
+@media (min-width: $screenS) {
+  h1 { font-size: 32px; }
+  h2 { font-size: 28px; }
+  h3 { font-size: 22px; }
+  h4 { font-size: 20px; }
+}
+
+@media (min-width: $screenL) {
+  h1 { font-size: 40px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 26px; }
+  h4 { font-size: 22px; }
+  h5 { font-size: 18px; }
+  h6 { font-size: 16px; }
+  p, li { font-size: 18px; }
+}
+
+@media (min-width: $screenXL) {
+  h1 { font-size: 44px; }
+  h2 { font-size: 36px; }
+}

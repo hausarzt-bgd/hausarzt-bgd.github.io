@@ -1,0 +1,11 @@
+- # default language: de # without subfolder
+  id : de
+  link : 
+  label : DE
+-
+  id : en
+  link : /en
+  label : EN
+#-
+  #id : zh
+  #label : 繁體中文

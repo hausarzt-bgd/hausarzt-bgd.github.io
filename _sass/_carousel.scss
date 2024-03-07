@@ -1,0 +1,38 @@
+/* carousel.scss 
+ *
+ * Bootstrap carousel overrides 
+ * Separated by carousel id
+ */
+
+ .container60.extend-left { 
+  .project-carousel {
+    background-color: $bg-grey;
+  }
+  p.note.flex30 {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+  @media (min-width: $screenXS) {
+    p.note.flex30 {
+      padding: 0 40px;
+    }
+  }
+  @media (min-width: $screenM) {
+    p.note.flex30 {
+      padding: 0 80px;
+    }
+  }
+  @media (min-width: $screenL) {
+    .project-carousel {
+      margin-right: 50px;
+    }
+    p.note.flex30 {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+#shareco-requirements, #shareco-use-cases, #yumiwi-persona, #yumiwi-use-cases {
+    width: 100%;
+}

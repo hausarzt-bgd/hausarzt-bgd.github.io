@@ -1,0 +1,45 @@
+---
+layout : default
+id : about
+title : title.about
+
+keywords : 
+description : 
+---
+<div class="container60 Grid profile-container">
+    <div class="flex50 Grid-column Grid-column--bottom">
+        <h3 class="intro">{% t about.intro %}</h3>
+    </div>
+    <div class="flex50 profile">
+        <img src="{{ site.baseurl_root }}/img/about/profile.jpg" />
+    </div>
+</div>
+
+<div class="magic-container">
+    <div class="container60 Grid Grid--cols-3 Grid--center">
+        {% for skill in site.data.skills %}
+            <div class="skill-container Grid-cell Grid Grid--center Grid--middle">
+                <div class="skill">
+                    <div class="bg-white"></div>
+                    <img src="{{ site.baseurl_root }}/img/about/{{ skill.icon }}.svg" />
+                </div>
+                <div class="Grid-cell">
+                    <h6><span class="tag">{% t skill.title %}</span></h6>
+                    <h5>{% t skill.text %}</h5>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="block20vh"></div>
+
+<div class="container60 Grid Grid--center">
+    <h2 style="text-align: center;">
+        {% t about.more %}
+        <a href="{{ site.baseurl_root }}/download/{{ site.lang }}/KJBondes.pdf" target="_blank"><span class="text-hover out">{% t nav.resume %}</span></a>
+        .
+    </h2>
+</div>
+
+<div class="block20vh"></div>

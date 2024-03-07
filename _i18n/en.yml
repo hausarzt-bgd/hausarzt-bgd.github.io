@@ -1,0 +1,172 @@
+general : 
+  last-updated : Last updated
+
+title : 
+  myoncare : myoncare
+  shareco : shareco
+  yumiwi : yumiwi
+  about : About me
+  privacy : Privacy
+
+nav : 
+  product : product
+  projects : work
+  about : about
+  resume : resume
+  lang : language
+  download-en : Download in English
+  download-de : Download in German
+  myoncare : "Degital healthcare platform"
+  shareco : "Concept of shared washing mashine"
+  yumiwi : "Online event-organization platform"
+
+home : 
+  web : web
+  app : app
+  product : product
+  description : "Hello! I'm Kuan-Ju Bondes – a <mark>Product Designer</mark> based in Germany. <br>With experience in <mark>design</mark> and <mark>usability</mark> for both physical and digital products."
+  featured : "Featured projects"
+  more : "More work"
+  more-text : "Find out more work I did before"
+  more-note : "These projects are linked to outside pages and only German available."
+  contact-about : "Know more about me"
+  contact-mail : "Drop me a message"
+  view : "view project"
+  view-cursor : "view"
+
+tag : 
+  ux : "UX Design"
+  ui : "UI Design"
+  uxui : "UX/UI Design"
+  app : "App"
+  web : "Web"
+  webapp : "Web App"
+  system : "System"
+  product : "Product Design"
+  graphic : "Graphic Design"
+  animation : "Animation"
+
+info : 
+  timeframe : timeframe
+  company : company
+  supervisor : supervisor
+  designer : designer
+  role : responsibilities
+  more : more
+
+about : 
+  intro : "I am a Product Designer with a deep technical understanding and a good sense for future trends."
+  web-title : "web design / develop"
+  web-text : "Advanced knowhow about HTML&CSS and Javascript. With experience in building website with blog framework Jekyll or online platform wix, webflow and wordpress."
+  app-title : "digital product design"
+  app-text : "Expertise in delivering UX/UI design for software products. Be able to quickly propose design strategies and collaborate with agile/scrum teams."
+  product-title : "product design"
+  product-text : "With a background in industrial design and product design to make products that fit the user with a more accurate perspective."
+  more : "More details in my "
+
+myoncare : 
+  summary : "Digital healthcare platform for efficient and demand-oriented patient care"
+  info-timeframe : "04.2017 – 07.2020"
+  info-company : "ONCARE GmbH"
+  info-role : "UX Review, User Flows, Information Architechture, Wireframing, Prototyping, Usability Test, UI Design, Design System"
+  overview-title : "Strengthen the connection between patients and their healthcare providers through myoncare"
+  overview-text-1 : "myoncare is a comprehensive digital service that focuses on healthcare follow-up and patient-centered healthcare via providing the real-time, proactive performance to react to reported abnormalities."
+  overview-text-2 : "During my last job as Senior Product & UI/UX Designer at ONCARE GmbH, I was responsible for <mark>research, conception, interactions, visual design, prototypes and mockups</mark> and did the complete design process <mark>for the current mobile app and web-app platform</mark>. The missions and milestones achieved during my working period are bellow: "
+  overview-text-3 : "1. Created the conception and final design deliverables of mobile app"
+  overview-text-4 : "2. Reviewed and redesigned the Web-app platform for healthcare providers"
+  overview-text-5 : "3. Completed websites and regarding marketing materials"
+  mobile-title : "Mobile app"
+  mobile-text : "The mobile app for patients was used the <mark>bottom to top dialog design</mark>, which makes user feels personally with the daily reminders and easy to focus on the important information."
+  mobile-note-current : "Current version lauched in 2018"
+  mobile-note-old : "First version in 2017"
+  web-title : "Web app"
+  web-text : "Based on the feedbacks from healthcare providers while the platform was used with mobile app on the market, I took a complete UX review for the web-app, refined it and proceed with redesigning. The main feature was ease of <mark>creating questionnaire and tracking the reports from each patients</mark>. All components were modularised design for responsive screens."
+  concept-note : "Sketches and flowcharts for each feature and use scenario"
+  styleguides-note : "Unified design system for all products from app to web app"
+  workflow-note : "UX/UI Walkthrough and refined product workflow"
+  reflection : "Reflection"
+  reflection-title : "Product design with Scrum Team"
+  reflection-text-1 : "While the past 3 years in the start-up, I was the only product designer and worked closely with each department, as well as the product owner and CEO. With the Scrum team I've learned <mark>how to quickly work in new tasks and make design strategies</mark>. Besides, I also had some opportunities to work with the projects of sisters' companies."
+  reflection-text-2 : "As a designer for digital products and software service in variety of projects, I've experience in <mark>Healthcare management system</mark>, <mark>Customer Relationship Management system(CRM)</mark>, <mark>Traveling & Meeting service</mark>, <mark>Data Visual analysis</mark>... etc. "
+  reflection-text-3 : "Due to the confidentiality, there are only few pictures and features allowed to show. For more information, please visit websites of the company <a href='https://www.myoncare.com/' target='_blank' class='text-hover out'>ONCARE GmbH</a> or the sister company <a href='https://www.convien.com/' target='_blank' class='text-hover out'>CONVIEN GmbH</a>."
+
+shareco : 
+  summary : "Concept design of an individual, environmentally friendly and user-friendly washing machine for shared use"
+  info-timeframe : "03.2016 – 06.2016 (Master thesis)"
+  info-supervisor : "Prof. Peter Laabs, Prof. Gerd Flohr"
+  info-designer : "Kuan-Ju Bondes"
+  overview-title : "New conception and digital service of a shared washing machine"
+  overview-text-1 : "More than 90% of German households have a washing machine, but it is usually only used 2-3 times a week. <mark>Every year in Germany about 1.8 million tons of electrical waste are produced, the largest part of which are household appliances.</mark> However, the existing shared washing machines have only a small market. Motives for this are, apart from structural and building technical aspects, washing habits, hygienic concerns, time availability and convenience."
+  overview-text-2 : "My product vision is to protect the environment through the shared use of washing machines in apartment buildings. The goal of the master thesis is a washing machine concept that <mark>eliminates lack of conventional solutions in order to improve the acceptance of communally used washing machines by the customer.</mark>"
+  problem-note : "Problems with conventional drum washing machines"
+  problem-1 : "must squat"
+  problem-2 : "must bend down deeply"
+  problem-3 : "Interface with a single language"
+  problem-4 : "imprecise amount of detergent"
+  problem-5 : "Laundry separation and full load"
+  problem-text-1 : "In Europe, people usually use drum washing machines, although there are some problems with their use; besides, many people do not know how to wash in an environmentally friendly way."
+  problem-text-2 : "The leading washing machine manufacturers are usually also market leaders in the field of other household appliances which often place great emphasis on sustainability. <mark>In order to stand out, these brands are now moving towards networked household appliances with apps for remote control or monitoring.</mark>"
+  target-group-note : "My target group is households living in apartment buildings, which belong to the socio-ecological and adaptive-pragmatic group"
+  goal-title : "Individualization, environmental-and user-friendliness"
+  goal-text : "Based on these aspects and a user survey, insufficiency and problems of conventional shared washing machines were identified and requirements for the new concept were derived. The main reasons for the low acceptance of laundries and comparable service are, in addition to the above-mentioned <mark>problems of environment and usability</mark>, mostly <mark>inconvenience</mark> (for example, due to the long distance to the location of the machine), <mark>a high cost factor, and a lack of individualization</mark>. This project focused on individualization, environmental friendliness and user-friendliness."
+  goal-note : "General requirements and requirements for the washing machine and the platform"
+  result-title : "SHARECO - economical & ecological"
+  result-text-1 : "Among other things, the design includes <mark>an automatic volume adjustment of the drum to the amount of laundry</mark>, <mark>optimizations with regard to ergonomics</mark> and <mark>networking with mobile devices</mark>."
+  result-text-2 : "The result is an improvement of the classic shared washing machine in terms of ergonomics and convenience. This should make it possible to create incentives for shared use, pass on the willingness to share to other people and protect nature."
+  reflection : "Reflection"
+  reflection-title : "Reflection title"
+  reflection-text : "Reflection text"
+ 
+yumiwi : 
+  summary : "Online platform for easy organization of a cooking event"
+  info-timeframe : "10.2015 – 01.2016"
+  info-supervisor : "Prof. Diana Simon"
+  info-designer : "Jie Ding, Johannes Hetzold, Kuan-Ju Bondes, Sandra Püschel"
+  info-role : "User Journey, User Flows, Information Architechture, Wireframing, UI Design, Prototyping"
+  overview-title : "Bring refugees and host communities closer with the aim of positively influencing development in the sense of interest-driven networking and cultural exchange."
+  overview-text-1 : "Today, social structures are subject to major changes. Especially due to the increased immigration, Germany will face great challenges in the next decade."
+  overview-text-2 : "In the European refugee crisis of 2015/2016, the number of newly arrived refugees increased sharply and their leisure activities were poor. At the same time, many locals wanted to participate and help them integrate into the community. But the main problem is how to organize and allocate these resources appropriately."
+  overview-text-3 : "Our version is to connect people and make them grow together. The aim of the project is to create <mark>an organizational and networking structure for immigrations and locals in order to break down barriers, establish connections and enable enjoy a meetup</mark>."
+  compitetors-title : "Networking and participating"
+  compitetors-text-1 : "We have sorted most of the platforms through which leisure activities can be offered according to the type of planning and participation. Creating better organizational and networking structures will increase users' desire to participate and make it easier for them to do so."
+  compitetors-text-2 : "With the task of creating offers of information, we decided to design a website on which event offers can be posted, searched, supported and participated. In particular, <mark>the project is dedicated to the topic of cooking, because it is easy to overcome language barriers and to enter into cultural exchange.</mark>"
+  compitetors-note : "The first quadrant - connected and participating - is the goal of our platform."
+  persona-note : "We shaped six different personas, then through user journeys and storyboards, imagined the mental actions at a cooking event."
+  usecase-note : "The core functions of the website are “join“, “create“ and “support“. In addition, a rating system is integrated through the creation of accounts, which also provides event recommendations and background information."
+  concept-model-title : "No space? Here are our partners"
+  concept-model-text-1 : "It is possible for outsiders to support event offers via the support function, similar to crowd-funding."
+  concept-model-text-2 : "<mark>Both communities and private individuals can provide rooms, equipment or food for cooking events without necessarily participating in them themselves.</mark> Contact can be made with appropriate organizations via the partner list. In this way, it should be possible to create events for large groups and to acquire the necessary resources for them."
+  styleguides-note : "Navigation via words and pictograms, mostly centered arrangement because of Arabic languages."
+  result-title : "Growing together"
+  result-text : "From the point of view of user-centered design, this is also reflected in the naming of the platform. YUMIWI is the synonym for YOU+ME=WE."
+  result-note : "Prototypes for <a href='http://nyphile.github.io/prototype/' target='_blank' class='text-hover out'>Website</a> and <a href='https://projects.invisionapp.com/share/4672XGFEB#/screens' target='_blank' class='text-hover out'>App</a>"
+  reflection : ""
+  reflection-title : ""
+  reflection-text : ""
+
+kuckuck : 
+  summary : "Study-Development of carpooling services for the elderly"
+  info-timeframe : "10.2014 – 01.2015"
+  info-supervisor : "Prof. Peter Laabs"
+  info-designer : "Christiane Felsberg, Christoph Uckermark, Franz Junghans, Jie Ding, Julius Plüschke, Kuan-Ju Pan, Luise Münzner"
+  info-role : "User Research, Product Concept, Interaction Design, Prototyping, Video Editing"
+
+luwood : 
+  summary : "Product development inspired by local culture"
+  info-timeframe : "05.2013 – 08.2013"
+  info-company : "OUTPUT Design Corp."
+  info-role : "Conception, Sketches, Prototyping, 3D-Modelling, Production File, Revision"
+
+mirak : 
+  summary : "New conception of a rental system and takeaway cooking station"
+  info-timeframe : "10.2015 – 01.2016"
+  info-supervisor : "Helge Oder"
+  info-designer : "Jie Ding, Johannes Hetzodl, Kuan-Ju Pan, Sandra Püschel"
+  info-role : "User Research, Conception, Sketches, Prototyping"
+
+ohwhy : 
+  summary : "Concept of strengthening family cohesion – Children’s camera and OLED Screen application"
+  info-timeframe : "09.2009 – 05.2010 (Bachelor thesis)"
+  info-supervisor : "Min-Yuan Ma"
+  info-designer : "Kuan-Ju Pan, Yi-Her Hsu, Yu-Chun Chou"
+  info-role : "Research, Conception, Sketches, Prototyping, 3D-Modelling & Rendering, Production File, Revision"

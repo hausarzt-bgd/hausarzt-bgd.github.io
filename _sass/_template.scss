@@ -1,0 +1,604 @@
+/* template.scss
+ *
+ * Reused elements (% can @extend by SCSS placeholder)
+ * Navbar, Footer, etc...
+ *
+ */
+
+.img-contain, %img-contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img-cover, %img-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* basic grid */
+body {
+  background-color: transparent;
+  @include transition(background-color 1s ease);
+}
+.container60 {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  .flex30, 
+  .flex70-left, 
+  .flex70-right, 
+  .flex50 {
+    width: 100%;
+  }
+  &.extend-left {
+    width: 100%;
+    margin-left: 0;
+    .extend-container {
+      padding: 20px;
+    }
+  }
+  &.extend-right {
+    width: 100%;
+    margin-right: 0;
+    .extend-container {
+      padding: 20px;
+    }
+  }
+  @media (min-width: $screenXS) {
+    width: calc(100% - 80px);
+    &.extend-left, &.extend-right {
+      .extend-container {
+        padding: 20px 40px;
+      }
+    }
+  }
+  @media (min-width: $screenM) {
+    width: calc(100% - 160px);
+    &.extend-left, &.extend-right {
+      .extend-container {
+        padding: 20px 80px;
+      }
+    }
+  }
+  @media (min-width: $screenL) {
+    width: 80%;
+    .flex30 { 
+      @include flex(0 0 30%); 
+    }
+    .flex70-left { 
+      @include flex(1); 
+      padding-right: 100px;
+    }
+    .flex70-right {
+      @include flex(1);
+      padding-left: 100px;
+    }
+    .flex50 {
+      @include flex(1);
+      padding: 0 50px;
+      &:first-child {
+        padding-left: 0px;
+      }
+      &:last-child {
+        padding-right: 0px;
+      }
+    }
+    &.extend-left {
+      width: 90%;
+      .extend-container {
+        padding: 20px;
+        padding-left: 10vw;
+      }
+    }
+    &.extend-right {
+      width: 90%;
+      .extend-container {
+        padding: 20px;
+        padding-right: 10vw;
+      }
+    }
+  }
+  @media (min-width: $screenXL) {
+    width: 70%;
+    &.extend-left {
+      width: 85%;
+      .extend-container {
+        padding-left: 15vw;
+      }
+    }
+    &.extend-right {
+      width: 85%;
+      .extend-container {
+        padding-right: 15vw;
+      }
+    }
+  }
+  @media (min-width: $screenXXL) {
+    width: 60%;
+    &.extend-left {
+      width: 80%;
+      .extend-container {
+        padding-left: 20vw;
+      }
+    }
+    &.extend-right {
+      width: 80%;
+      .extend-container {
+        padding-right: 20vw;
+      }
+    }
+  }
+}
+.hr-60 { // hr for container60, left from 0 to right side of container 
+  width: 100%;
+  @media (min-width: $screenXS) {
+    width: calc(100% - 40px);
+  }
+  @media (min-width: $screenM) {
+    width: calc(100% - 80px);
+  }
+  @media (min-width: $screenL) {
+    width: 90%;
+  }
+  @media (min-width: $screenXL) {
+    width: 85%;
+  }
+  @media (min-width: $screenXXL) {
+    width: 80%;
+  }
+}
+/* text highlight */
+mark {
+  color: inherit;
+  padding: 5px 0;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, transparent 20%, $main-color 0%);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  @include transition(background-size 0.3s ease);
+  &:hover {
+    background-size: 100% 100%;
+  }
+}
+h1, h2, h3, h4, h5, h6, p {
+  &:hover {
+    mark { background-size: 100% 100%; }
+  }
+}
+/* cursor */
+#follower { // hide in mobile except landing page -> see show-on-scroll.js
+  display: none;
+  position: fixed;
+  pointer-events: none;
+  z-index: 1050; // same heirachy as modal
+  .cursor {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+    color: transparent;
+    border-radius: 50%;
+    background-color: $main-color;
+    opacity: 1;
+    will-change: transform;
+    @include transform(scale(0.15));
+    @include transition(transform 0.3s ease);
+  }
+  /*
+  .cursor-web {
+    z-index: -999;
+    opacity: 0.5;
+    @include transform(scale(2.8));
+    background-color: $shareco;
+  }
+  .cursor-app {
+    z-index: -999;
+    opacity: 0.5;
+    @include transform(scale(2.3));
+    background-color: $myoncare;
+  }
+  .cursor-product {
+    z-index: -999;
+    opacity: 0.5;
+    @include transform(scale(3.5));
+  }
+  */
+  .cursor-text {
+    z-index: 999 !important;
+    opacity: 0.8;
+    @include transform(scale(1));
+    h6 {
+      color: black;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      @extend %Grid, %Grid--center, %Grid--middle;
+    }
+    &:focus {
+      @include transform(scale(0.9));
+    }
+  }
+  .cursor-wave {
+    @include transform(scale(1));
+    background-color: transparent;
+    background-image: url('../img/icon/wave.gif');
+    @extend %img-contain;
+  }
+  .cursor-back {
+    z-index: 999 !important;
+    opacity: 0.8;
+    @include transform(scale(0.5));
+    background-image: url('../img/icon/icon-close.svg');
+    @extend %img-contain;
+  }
+  @media (min-width: $screenXXS) {
+    display: block;
+  }
+}
+/* components */
+.dropdown {
+  position: relative;
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 $black-20;
+    white-space: nowrap;
+    z-index: 1;
+    &.text {
+      margin: 5px auto 5px -20px;
+      h6 {
+        text-transform: none;
+      }
+    }
+    &.icon {
+      margin-left: 10px;
+    }
+    a {
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: block;
+    }
+    a:hover {
+      color: inherit !important;
+      border-radius: 5px;
+      background-color: $bg-grey;
+    }
+  }
+  &:hover {
+    .dropdown-content {
+      display: block;
+    }
+  }
+}
+.text-hover, %text-hover { // highlight in
+  cursor: pointer;
+  display: inline-block;
+  &.in, &.out, &%in, &%out {
+    background-image: linear-gradient(180deg, transparent 65%, $main-color 0%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    @include transition(background-size 0.3s ease);
+    &:hover {
+      background-size: 100% 100%;
+    }
+  }
+  &.in, &%in { // without underline
+    &.active { // active for main-navbar
+      &:hover { background: none; }
+      &::after { 
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: black;
+      } 
+    }
+  }
+  &.out, &%out { // with underline
+    &::after { 
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: black;
+      @include transition(width 0.3s ease);
+    } 
+    &:hover::after { width: 0%; }
+  }  
+}
+.icon-hover {
+  cursor: pointer;
+  border-radius: 999px;
+  background-color: transparent;
+  @include transition(background-color .3s ease);
+  &:hover {
+    background-color: $main-color;
+  }
+}
+.btn-hover, %btn-hover {
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 999px;
+  &::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 999px;
+    background-color: $main-color;
+    width: 2.6em;
+    opacity: 0.5;
+    @include transition(all 0.4s ease-in-out);
+  }
+  &:hover::before {
+    width: 100%;
+    opacity: 1;
+  }
+}
+.btn-hover-white {
+  @extend %btn-hover;
+  z-index: 0;
+  &::before {
+    background-color: white !important;
+    width: 2em;
+  }
+}
+.tag {
+  padding: 5px 15px;
+  background-color: $white-50;
+  border-radius: 999px;
+}
+.modal { // modal showed by toggle
+  position: fixed;
+  overflow-y: scroll !important;
+  .modal-background { // click background to end the modal mode
+    position: fixed;
+    cursor: none; // cursor icon-close
+    z-index: -100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $black-80;
+  }
+  .modal-project-container { 
+    position: relative;
+    margin: 5vh auto;
+    background-color: white;
+    border-radius: 10px;
+    @include animation(slide-in-bottom 0.4s);
+  }
+  .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .modal-project-pic {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 10px 10px 0 0;
+    @extend %img-cover;
+  }
+  .modal-project-content {
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+    .title {
+      .tag {
+        margin: 0 20px 10px -10px;
+        color: $black-50;
+        background-color: $bg-grey;
+      }
+      .hr {
+        width: 100%;
+        margin: 40px 0;
+      }
+    }
+    .info {
+      .info-title {
+        text-transform: capitalize;
+        color: $black-50;
+        width: 100%;
+      }
+    }
+  }
+  &#kuckuck {
+    .modal-project-pic {
+      background-position: 65% 35%;
+    }
+  }
+  &#luwood {
+    .modal-project-pic {
+      background-position-y: 75%;
+    }
+    .icon-close {
+      span {
+        background: white;
+      }
+    }
+  }
+  &#mirak {
+    .modal-project-pic {
+      background-size: contain;
+      background-position-y: 100%;
+    }
+  }
+  &#ohwhy {
+    .modal-project-pic {
+      background-size: contain;
+    }
+  }
+  @media (min-width: $screenS) {
+    .modal-project-pic {
+      min-height: 400px;
+    }
+  }
+  @media (min-width: $screenL) {
+    .modal-back {
+      display: none;
+    }
+    .modal-project-container {
+      height: 80%;
+      min-height: 600px;
+      margin-top: 10vh;
+    }
+    .modal-project-pic {
+      width: 50%;
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+    }
+    .modal-project-content {
+      width: 50%;
+      height: 100%;
+      padding: 40px;
+      .title {
+        margin: 20px 0;
+        h2 {
+          margin-top: 2vh;
+        }
+        .hr {
+          display: none;
+        }
+      }
+      .info {
+        margin-bottom: 2vh;
+        .info-title {
+          width: 160px;
+        }
+      }
+    }
+    &#luwood {
+      .icon-close {
+        span {
+          background: black;
+        }
+      }
+    }
+  }
+}
+
+.noscroll { // prevent main-content scroll while menu is opened
+  position: fixed;
+  overflow: hidden;
+}
+#nav, #mobile-nav {
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  @include transition(top 0.3s ease);
+  #nav-logo {
+    h6 { margin-left: 2px; }
+  }
+}
+#nav {
+  display: none;
+  padding: 15px 0;
+  .nav-item {
+    margin: 0 20px;
+    padding: 5px 0; // distance to .dropdown-content.text
+  }
+  #nav-right {
+    display: none;
+    .icon-resume {
+      margin: 0 10px;
+    }
+    .icon-lang { 
+      margin-left: 10px;
+     }
+  }
+  @media (min-width: $screenS) {
+    display: block;
+    padding: 15px 0;
+    #nav-right { display: flex; }
+  }
+}
+#mobile-nav {
+  display: block;
+  padding: 10px 0;
+  overflow-y: auto;
+  #mobile-menu {
+    padding-bottom: 40px;
+    background-color: white;
+    .menu-item {
+      height: 75px;
+      margin: 20px 0;
+      &:hover {
+        padding-left: 10px;
+      }
+      &.active {
+        border-right: 5px solid $main-color;
+        padding-left: 0 !important;
+        background-color: $lu-yellow-10;
+      }
+    }
+    .menu-item-row {
+      margin: 10px;
+      border-radius: 5px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .menu-left {
+      height: 100%;
+      @include flex(1);
+      @extend %img-cover;
+      border-radius: 5px;
+    }
+    .menu-right {
+      @include flex(3);
+      padding-left: 20px;
+    }
+    h6 {
+      margin: 40px 0 10px 0;
+    }
+    h5 {
+      letter-spacing: 1.2px;
+    }
+  }
+  @media (min-width: $screenS) {
+    display: none;
+  }
+}
+.nav-scrollup {
+  background-color: white;
+  box-shadow: 0px 2px #F9F9F9;
+  padding: 5px 0 !important;
+  #nav-logo {
+    h2 { font-size: 20px !important; }
+    h6 { display: none; }
+  }
+  @media (min-width: $screenS) {
+    #nav-logo {
+      h2 { font-size: 24px !important; }
+      h6 { 
+        display: block;
+        font-size: 12px !important; 
+      }
+    }
+  }
+}
+#footer {
+  padding: 10px 0;
+  #footer-icons {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .footer-web { display: none; }
+  .icon-mail { display: flex; }
+  @media (min-width: $screenS) {
+    #footer-icons { width: auto; }
+    .footer-web { display: flex; }
+    .icon-mail { display: none; }
+  } 
+}

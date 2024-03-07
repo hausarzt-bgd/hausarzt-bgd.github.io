@@ -1,0 +1,41 @@
+-
+  id : myoncare
+  logo : logo-myoncare
+  summary : myoncare.summary
+  color : rgb(214, 39, 117); #D62775
+  tags : [tag.uxui, tag.app, tag.webapp]
+  overview-title : myoncare.overview-title
+  overview-text : [myoncare.overview-text-1,
+                   myoncare.overview-text-2,
+                   myoncare.overview-text-3,
+                   myoncare.overview-text-4,
+                   myoncare.overview-text-5]
+  info : [[info.timeframe, myoncare.info-timeframe], 
+          [info.company, myoncare.info-company], 
+          [info.role, myoncare.info-role]]
+-
+  id : shareco
+  logo : logo-shareco
+  summary : shareco.summary
+  color : rgb(242, 106, 39); #F26A27
+  tags : [tag.product, tag.ui]
+  overview-title : shareco.overview-title
+  overview-text : [shareco.overview-text-1,
+                   shareco.overview-text-2]
+  info : [[info.timeframe, shareco.info-timeframe], 
+          [info.supervisor, shareco.info-supervisor], 
+          [info.designer, shareco.info-designer]]
+-
+  id : yumiwi
+  logo : logo-yumiwi
+  summary : yumiwi.summary
+  color : rgb(207, 78, 67); #CF4E43
+  tags : [tag.uxui, tag.app, tag.web]
+  overview-title : yumiwi.overview-title
+  overview-text : [yumiwi.overview-text-1,
+                   yumiwi.overview-text-2,
+                   yumiwi.overview-text-3]
+  info : [[info.timeframe, yumiwi.info-timeframe], 
+          [info.supervisor, yumiwi.info-supervisor], 
+          [info.designer, yumiwi.info-designer],
+          [info.role, yumiwi.info-role]]

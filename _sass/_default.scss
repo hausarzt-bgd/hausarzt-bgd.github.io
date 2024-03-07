@@ -1,0 +1,49 @@
+/* default.scss */
+
+/* css test funktion */
+.border, %border { border: 1px solid yellow; }
+.borderRed, %borderRed { border: 3px solid red; }
+
+/* section block */
+.block50 { height: 50px; }
+.block100 { height: 100px; }
+.block150 { height: 150px; }
+.block200 { height: 200px; }
+
+.block10vh { height: 10vh; }
+.block20vh { height: 20vh; }
+
+/* horizontal & vertival line */
+.hr { border-bottom: 1px solid black; }
+
+/* reset default css */
+html, body {  /* % : zoom in & out for safari */
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  //overflow-y: auto;
+  scroll-behavior: smooth;
+}
+html ::selection, body ::selection {
+  background-color: $main-color;
+}
+a:link, a:visited, a:hover, a:active {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  @include transition(color 0.3s ease);
+}
+Button {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}

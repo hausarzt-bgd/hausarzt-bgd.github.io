@@ -1,0 +1,23 @@
+---
+layout : default
+id : privacy
+title : title.privacy
+
+last-updated : "2021-02-21"
+---
+<div class="page-title-container">
+    <div class="container60">
+        <h1 style="margin-bottom: 10px;">Datenschutzerklärung</h1>
+        <h6>{% t general.last-updated %} : {{ page.last-updated }}</h6>
+    </div>
+</div>
+<div id="privacy-content" class="container60">
+    <div class="Grid">
+        <div class="flex30 sticky" style="margin-bottom: 10vh;">
+            {% tf privacy-info.md %}
+        </div>
+        <div class="flex70-right">
+            {% tf privacy.md %}
+        </div>
+    </div>
+</div>

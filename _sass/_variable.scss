@@ -1,0 +1,23 @@
+/* variable.scss
+ *
+ * Breakpoints for different screen resolution
+ * Mobile first with @media
+ *
+ * screenXXS : < 576px (Mobile first)
+ * screenXS  : 576px - 767px
+ * screenS   : 768px - 991px
+ * screenM   : 992px - 1199px
+ * screenL   : 1200px – 1699px
+ * screenXL  : 1700px – 1999px
+ * screenXXL : > 2000px
+ *
+ */
+
+$screen320  : 350px; // test for iphone5/5E
+$screenXXS  : 420px; // mobile wide
+$screenXS   : 576px;
+$screenS    : 768px;
+$screenM    : 992px;
+$screenL    : 1200px;
+$screenXL   : 1700px;
+$screenXXL  : 2000px;

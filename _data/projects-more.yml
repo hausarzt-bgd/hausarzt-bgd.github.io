@@ -1,0 +1,29 @@
+-
+  id : kuckuck
+  summary : kuckuck.summary
+  tags : [tag.uxui, tag.system, tag.app]
+  info : [[info.timeframe, kuckuck.info-timeframe], 
+          [info.role, kuckuck.info-role]]
+  link : true
+-
+  id : luwood
+  summary : luwood.summary
+  tags : [tag.product]
+  info : [[info.timeframe, luwood.info-timeframe], 
+          [info.company, luwood.info-company], 
+          [info.role, luwood.info-role]]
+  link : true
+-
+  id : mirak
+  summary : mirak.summary
+  tags : [tag.product]
+  info : [[info.timeframe, mirak.info-timeframe], 
+          [info.role, mirak.info-role]]
+  link : true
+-
+  id : ohwhy
+  summary : ohwhy.summary
+  tags : [tag.product]
+  info : [[info.timeframe, ohwhy.info-timeframe], 
+          [info.role, ohwhy.info-role]]
+  link : true

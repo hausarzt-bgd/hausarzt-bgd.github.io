@@ -1,0 +1,117 @@
+/* mixin.scss
+ *
+ * Mixin can include in each class, also inside @media.
+ * Better use for multiple browse settings like: –webkit, –moz, – ms...
+ * There might be duplicated codes when it excludes.
+ *
+ * -webkit- : For Chrome 25 and Safari 6, iOS 6.1, Android 4.3
+ * -moz- : For Firefox (3.6 to 15)
+ * -ms- : For Internet Explorer
+ * -o- : For old Opera (11.1 to 12.0)
+ *
+ */
+
+@mixin keyframes ($animationName) {
+    @-webkit-keyframes #{$animationName} { @content; }
+       @-moz-keyframes #{$animationName} { @content; }
+            @keyframes #{$animationName} { @content; }
+}
+@mixin transform ($property...) {
+    -webkit-transform: $property;
+       -moz-transform: $property;
+        //-ms-transform: $property;
+         -o-transform: $property;
+            transform: $property;
+}
+@mixin transform-origin ($property...) {
+    -webkit-transform-origin: $property;
+       -moz-transform-origin: $property;
+         -o-transform-origin: $property;
+            transform-origin: $property;
+}
+@mixin transition ($property...) {
+    -webkit-transition: $property;
+       -moz-transition: $property;
+         -o-transition: $property;
+            transition: $property;
+}
+/* animation: $name, $duration, $timing-function, $delay
+ * additional properties: 
+ * $direction 
+ * $fill-mode (forwards | backwards | both | alternate)
+ * $iteration-count (# of times | infinite) 
+ */
+@mixin animation ($property...) { 
+    -webkit-animation: $property;
+            animation: $property;
+}
+/* basic css */
+@mixin box-shadow ($value...) {
+    -webkit-box-shadow: $value; 
+       -moz-box-shadow: $value;
+            box-shadow: $value; // inset | x-offset | y-offset | blur | blur-offset | color
+}
+@mixin filter ($property) {
+    -webkit-filter : $property;
+            filter : $property; // none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url()
+}
+
+/* for flexgrid */
+@mixin flexbox { 
+    display:  -webkit-box;
+    display:     -moz-box;
+    display: -webkit-flex;
+    display:  -ms-flexbox;
+    display:         flex; // flex | inline-flex
+}
+@mixin flex-flow ($direction, $wrap) {
+    -webkit-flex-direction: $direction;
+        -ms-flex-direction: $direction;
+            flex-direction: $direction; // column | column-reverse | row | row-reverse
+    -webkit-flex-wrap: $wrap;
+        -ms-flex-wrap: $wrap;
+            flex-wrap: $wrap; // nowrap | wrap | wrap-reverse
+}
+@mixin order ($value) {
+//  -webkit-box-ordinal-group: $value; // 1 | positive integer
+//     -moz-box-ordinal-group: $value;
+                -webkit-order: $value;
+                    -ms-order: $value;
+                        order: $value; // 0 | integer
+}
+/* flex: < $flex-grow > < $flex-shrink > || < $flex-basis > */
+@mixin flex ($value...) { 
+//  -webkit-box-flex: $value; // 0.0 | positive floating-point number
+//     -moz-box-flex: $value;
+        -webkit-flex: $value;
+            -ms-flex: $value;
+                flex: $value; // none(0 0 auto) | initial(0 1 auto) | auto(1 1 auto)
+}
+@mixin flex-grow ($value) {
+    -webkit-flex-grow: $value;
+            flex-grow: $value; // 0 | positive number
+}
+@mixin flex-shrink ($value) {
+    -webkit-flex-shrink: $value;
+            flex-shrink: $value; // 1 | positive number
+}
+@mixin flex-basis ($value) {
+    -webkit-flex-basis: $value;
+            flex-basis: $value; // auto | positive length
+}
+@mixin justify-content ($position) {
+    -webkit-justify-content: $position;
+            justify-content: $position; // center | flex-end | flex-start | space-around | space-between
+}
+@mixin align-items ($position) {
+    -webkit-align-items: $position;
+            align-items: $position; // baseline | center | flex-end | flex-start | stretch
+}
+@mixin align-self ($position) {
+    -webkit-align-self: $position;
+            align-self: $position; // auto | baseline | center | flex-end | flex-start | stretch
+}
+@mixin align-content ($position) {
+    -webkit-align-content: $position;
+            align-content: $position; // center | flex-end | flex-start | space-around | space-between | stretch
+}

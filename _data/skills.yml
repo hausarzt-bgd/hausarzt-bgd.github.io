@@ -1,0 +1,12 @@
+-
+  icon : icon-web
+  title : about.web-title
+  text : about.web-text
+-
+  icon : icon-app
+  title : about.app-title
+  text : about.app-text
+-
+  icon : icon-product
+  title : about.product-title
+  text : about.product-text

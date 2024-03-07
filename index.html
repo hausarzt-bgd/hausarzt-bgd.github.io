@@ -1,0 +1,107 @@
+---
+layout : default
+id : home
+
+keywords : 
+description : 
+---
+
+<div id="home-landing-page" class="transbox">
+    <div class="title-container container60 Grid-column Grid-column--middle">
+        <div id="title-group" class="transbox">
+            <div class="title-bg-strip">
+                <div class="up"></div>
+                <div class="down"></div>
+            </div>
+            <div class="title-group Grid-column">
+                <span class="title" onmousemove="cursorShow('cursor-web')" onmouseout="cursorHide('cursor-web')">{% t home.web %}. </span>
+                <span class="title" onmousemove="cursorShow('cursor-app')" onmouseout="cursorHide('cursor-app')">{% t home.app %}. </span>
+                <span class="title" onmousemove="cursorShow('cursor-product')" onmouseout="cursorHide('cursor-product')">{% t home.product %}.</span>
+            </div>
+        </div>
+        <div id="sub-title" class="transbox">
+            <h3 class="sub-title">{% t home.description %}</h3>
+        </div>
+    </div>
+</div>
+
+<div id="home-projects" class="container60 Grid">
+    <div class="Grid-cell">
+        {% for project in site.data.projects %}
+            <div class="content-container Grid-column Grid-column--middle">
+                <div id="home-{{ project.id }}" class="show-on-scroll">
+                    <img id="project-logo" src="{{ site.baseurl_root }}/img/logo/{{ project.logo }}.svg" />
+                    <h2>{% t project.summary %}</h2>
+                    <a href="{{ site.baseurl }}/projects/{{ project.id }}.html">
+                        <h6><span class="text-hover out">{% t home.view %}</span></h6>
+                        <!--h6 class="btn-hover text-hover out" style="margin-left: -10px;">{% t home.view %}</h6-->
+                    </a>
+                </div>
+                <a class="transbox img-none-scroll" href="{{ site.baseurl }}/projects/{{ project.id }}.html">
+                    <img src="{{ site.baseurl_root }}/img/{{ project.id }}/project-{{ project.id }}-mobile.jpg" onmousemove="cursorShow('cursor-text')" onmouseout="cursorHide('cursor-text')"/>
+                    <div class="project-tags">
+                        <div class="Grid">
+                        {% assign x = project.tags.size | minus: 1 %}
+                        {% for i in (0..x) %}
+                            <h6 class="tag">{% t project.tags[i] %}</h6>
+                        {% endfor %}
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="img-container">
+        {% for project in site.data.projects %}
+            <a href="{{ site.baseurl }}/projects/{{ project.id }}.html" onmousemove="cursorShow('cursor-text')" onmouseout="cursorHide('cursor-text')">
+                <div id="img-home-{{ project.id }}" class="Grid Grid--middle">
+                    <div class="transbox" style="margin: 20px 0;">
+                        <img src="{{ site.baseurl_root }}/img/{{ project.id }}/project-{{ project.id }}.jpg" />
+                        <div class="project-tags Grid">
+                            {% assign x = project.tags.size | minus: 1 %}
+                            {% for i in (0..x) %}
+                                <h6 class="tag">{% t project.tags[i] %}</h6>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- move the project to actuell page -->
+<div class="title-more container60">
+    <h2>{% t home.more %}</h2>
+    <!--h4 style="margin-top: 20px;">{% t home.more-text %}</h4-->
+    <div class="projects-container Grid">
+        {% for more in site.data.projects-more %}
+            <div class="Grid-cell Grid-4">
+                <a onmousemove="cursorShow('cursor-text')" onmouseout="cursorHide('cursor-text')" onclick="" data-toggle="modal" href="#{{ more.id }}">
+                    <img src="{{ site.baseurl_root }}/img/others/{{ more.id }}.jpg" />
+                </a>
+                {% include modal-project.html content=more.id %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="title-contact">
+    <div class="container60 Grid Grid--middle">
+        <a class="Grid-cell" href="{{ site.baseurl }}/about.html">
+            <h2 class="text-hover out">{% t home.contact-about %}</h2>
+            <!--h2 class="btn-hover-white text-hover out">{% t home.contact-about %}</h2-->
+        </a>
+        <div class="Grid Grid--center Grid--middle profile">
+            <div class="profile-img" onmousemove="cursorShow('cursor-wave')" onmouseout="cursorHide('cursor-wave')">
+                <img src="{{ site.baseurl_root }}/img/profile_s.png" />
+            </div>
+        </div>
+        <a class="Grid-cell" href="mailto: {{ site.email}}">
+            <h2 class="text-hover out">{% t home.contact-mail %}</h2>
+            <!--h2 class="btn-hover-white text-hover out">{% t home.contact-mail %}</h2-->
+        </a>
+    </div>
+</div>
+
+<script type="text/javascript" src="{{ site.baseurl_root }}/js/show-on-scroll.js"></script>

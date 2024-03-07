@@ -1,0 +1,30 @@
+# Site settings
+title: "KJ Bondes"
+author: "KJ Bondes"
+email: kuanju.bondes@posteo.de
+description: home.description
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://kjbondes.github.io"
+
+github_username:  "kjbondes"
+linkedin: "https://www.linkedin.com/in/kuanjupan/"
+xing: "https://www.xing.com/profile/KuanJu_Bondes/"
+
+exclude: ["site_publish.sh", ".jekyll-cache"]  
+
+# Build settings
+markdown: kramdown
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-multiple-languages-plugin
+
+# jekyll-multiple-languages-plugin settings:
+languages: ["de", "en"]
+exclude_from_localizations: ["css", "js", "img", "fonts", "download", "favicon.ico"]
+default_locale_in_subfolder: false

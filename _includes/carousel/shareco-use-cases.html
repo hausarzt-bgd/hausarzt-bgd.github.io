@@ -1,0 +1,19 @@
+<script>
+    // When the DOM is ready, run this function
+    $( document ).ready(function() {
+        $('.use-cases-carousel').carousel({
+            pauseOnHover: true,
+            interval: 2000
+        });
+    });
+</script>
+    
+<div id="shareco-uses-case">
+    <div class="use-cases-carousel carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <img class="item Grid-column active" src="{{ site.baseurl_root }}/img/shareco/use_cases/use_case_1.jpg" />
+            <img class="item Grid-column" src="{{ site.baseurl_root }}/img/shareco/use_cases/use_case_2.jpg" />
+            <img class="item Grid-column" src="{{ site.baseurl_root }}/img/shareco/use_cases/use_case_3.jpg" />
+        </div>
+    </div>
+</div>

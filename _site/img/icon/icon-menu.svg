@@ -1,0 +1,6 @@
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="icon-/-icon-menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="line-top" fill="#000000" x="13" y="18" width="26" height="2" rx="1"></rect>
+        <rect id="line-down" fill="#000000" x="13" y="30" width="26" height="2" rx="1"></rect>
+    </g>
+</svg>

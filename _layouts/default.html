@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml">
+
+  {% include head.html %}
+
+  <body id="{{ page.id }}">
+
+    {% include main-navbar.html %}
+
+    <div id="main-content">
+      
+      {{ content }}
+      {% include footer.html %}
+      
+    </div>
+
+    {% include follower.html %}
+
+  </body>
+
+</html>

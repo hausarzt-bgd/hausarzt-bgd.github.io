@@ -1,0 +1,56 @@
+/* color.scss */
+:root { // only used for test in inline html
+    --bg-grey  : rgb(249, 249, 249);    
+    --lu-yellow: rgb(255, 220, 0);  
+    --myoncare : rgb(214, 39, 117); 
+    --shareco  : rgb(242, 106, 39); 
+    --yumiwi   : rgb(207, 78, 67); 
+}
+
+$bg-grey:   rgb(249, 249, 249);                //#F9F9F9
+
+$lu-yellow :    rgb(255, 220, 0);              //#FFDC00
+$lu-yellow-10 : rgba(255, 220, 0, 0.1);
+$lu-yellow-20 : rgba(255, 220, 0, 0.2);
+$lu-yellow-30 : rgba(255, 220, 0, 0.3);
+$lu-yellow-40 : rgba(255, 220, 0, 0.4);
+$lu-yellow-50 : rgba(255, 220, 0, 0.5);
+$lu-yellow-60 : rgba(255, 220, 0, 0.6);
+$lu-yellow-70 : rgba(255, 220, 0, 0.7);
+$lu-yellow-80 : rgba(255, 220, 0, 0.8);
+$lu-yellow-90 : rgba(255, 220, 0, 0.9);
+
+$white-10 : rgba(255, 255, 255, 0.1);
+$white-20 : rgba(255, 255, 255, 0.2);
+$white-30 : rgba(255, 255, 255, 0.3);
+$white-40 : rgba(255, 255, 255, 0.4);
+$white-50 : rgba(255, 255, 255, 0.5);
+$white-60 : rgba(255, 255, 255, 0.6);
+$white-70 : rgba(255, 255, 255, 0.7);
+$white-80 : rgba(255, 255, 255, 0.8);
+$white-90 : rgba(255, 255, 255, 0.9);
+
+$black-10 : rgba(0, 0, 0, 0.1);
+$black-20 : rgba(0, 0, 0, 0.2);
+$black-30 : rgba(0, 0, 0, 0.3);
+$black-40 : rgba(0, 0, 0, 0.4);
+$black-50 : rgba(0, 0, 0, 0.5);
+$black-60 : rgba(0, 0, 0, 0.6);
+$black-70 : rgba(0, 0, 0, 0.7);
+$black-80 : rgba(0, 0, 0, 0.8);
+$black-90 : rgba(0, 0, 0, 0.9);
+
+$myoncare : rgb(214, 39, 117);      //#D62775
+$myoncare-20 : rgba(214, 39, 117, 0.2);
+$myoncare-gradient : linear-gradient(-0.07turn, rgba(255, 113, 113, 0.8), rgba(220, 15, 106, 0.8));
+
+$shareco : rgb(242, 106, 39);      //#F26A27
+$shareco-20 : rgba(242, 106, 39, 0.2);
+$shareco-gradient : linear-gradient(-0.07turn, rgba(255, 174, 0, 0.8), rgba(242, 106, 39, 0.8));
+
+$yumiwi : rgb(207, 78, 67);       //#CF4E43
+$yumiwi-20 : rgba(207, 78, 67, 0.2);
+$yumiwi-gradient : linear-gradient(-0.07turn, rgba(222, 93, 56, 0.8), rgba(216, 26, 0, 0.8));
+
+$main-color: $lu-yellow;
+$current-color: $main-color;
