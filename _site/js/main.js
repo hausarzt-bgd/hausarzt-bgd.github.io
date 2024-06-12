@@ -27,7 +27,7 @@ $(document).ready(function(){
   }
 
   /* hide navbar while landing from screenM */
-  hideNavbar();
+  //hideNavbar();
 
   /* icon-menu toggle & body noscroll */
   $('#icon-menu').click(function(){
