@@ -121,36 +121,34 @@
       
       <div id="home-landing-page" class="Grid">
     <div class="flex60 main-photo"></div>
-    <div class="flex40 main-info">
+    <div class="flex40 main-info transbox">
+        <div class="bg-img"></div>
         <div class="office-hours">
             <h2>Öffnungszeiten</h2>
             <div class="Grid Grid--top">
                 <h3 class="weekday">Mo</h3>
-                <h3 class="time">08.00 – 12.00</h3>
-                <h3 class="time">15.00 – 18.00</h3>
+                <h3 class="time">08:00 – 12:30</h3>
+                <h3 class="time">15:00 – 18:00</h3>
             </div>
             <div class="Grid Grid--top">
                 <h3 class="weekday">Di</h3>
-                <h3 class="time">08.00 – 12.00</h3>
-                <h3 class="time">15.00 – 18.00</h3>
+                <h3 class="time">08:00 – 12:30</h3>
             </div>
             <div class="Grid Grid--top">
                 <h3 class="weekday">Mi</h3>
-                <h3 class="time">08.00 – 12.00</h3>
-                <h3 class="time">15.00 – 18.00</h3>
+                <h3 class="time">08:00 – 12:30</h3>
+                <h3 class="time">15:00 – 19:00</h3>
             </div>
             <div class="Grid Grid--top">
                 <h3 class="weekday">Do</h3>
-                <h3 class="time">08.00 – 12.00</h3>
-                <h3 class="time">15.00 – 18.00</h3>
+                <h3 class="time">08:00 – 12:30</h3>
             </div>
             <div class="Grid Grid--top">
                 <h3 class="weekday">Fr</h3>
-                <h3 class="time">08.00 – 12.00</h3>
-                <h3 class="time">15.00 – 18.00</h3>
+                <h3 class="time">08:00 – 17:00</h3>
             </div>
             <div style="margin: 20px 0;">
-                <h3 class="note">Nächste Schließungszeiten :<br>vom 23.12. bis 01.01.</h3>
+                <h3 class="note">Nächste Schließungszeiten :<br>15.08. Mariä Himmerfahrt</h3>
             </div>
         </div>
     </div>
@@ -160,29 +158,49 @@
     <div class="Grid-column Grid-column--center">
         <h2 class="section-title">Sprechzeiten</h2>
         <div class="section-des Grid Grid--middle">
-            <h5>Termin nach telefonischer Vereinbarung</h5>
-            <a class="highlight-info Grid Grid--middle" href="">
+            <h3 class="section-des-text">Termin nach telefonischer Vereinbarung</h3>
+            <a class="highlight-info Grid Grid--middle">
                 <div class="icon-phone icon20" style="margin-right: 10px;"></div>
                 <h3>08652 66014</h3>
             </a>
         </div>
     </div>
 
-    <div class="dr-info Grid">
-        <div class="col-dr" style="height: 100px;">
+    <div class="dr-office-hours Grid">
+        <div class="col-dr Grid Grid--top">
+            <div class="dr-photo" style="background-image: url('img/photo/dr-johannes.jpg');">
+            </div>
+            <div class="dr-info">
+                <div class="bg-img">
 
+                </div>
+                <div class="dr-info-name">
+                    <h5>Dr info</h5>
+                </div>
+            </div>
         </div>
         <div class="col-dr">
-    
+            <div class="dr-photo" style="background-image: url('img/photo/dr-eva.jpg');">
+            </div>
         </div>
         <div class="col-dr">
-    
+            <div class="dr-photo" style="background-image: url('img/photo/dr-peter.jpg');">
+            </div>
         </div>
     </div>
 </div>
 
 <div id="home-video" class="section container60">
-    <h2>Unsere Praxis</h2>
+    <div class="Grid-column Grid-column--center">
+        <h2 class="section-title">Unsere Praxis</h2>
+        <a class="section-des highlight-info Grid Grid--middle">
+            <div class="icon-home icon20" style="margin-right: 10px;"></div>
+            <h3>Franziskanerpl. 6, 3.O.G, 83471 Berchtesgaden</h3>
+        </a>
+    </div>
+    <video controls autoplay width="100%" height="auto">
+        <source src="/video/praxis_video.mp4" type="video/mp4">
+    </video>
 </div>
 
 <div id="home-contact">
@@ -190,7 +208,7 @@
 </div>
 
 <script type="text/javascript" src="/js/show-on-scroll.js"></script>
-      <div id="footer" class="container60 Grid Grid--middle">
+      <div id="footer" class="container60 Grid-column Grid-column--center">
     <div id="footer-text" class="Grid Grid--middle">
         <a class="footer-web" href="mailto:info@hausarzt-bgd.de">
             <h6 class="text-hover in" style="margin-top: 1px;">info@hausarzt-bgd.de</h6>
