@@ -81,7 +81,7 @@
     .highlight-info {
         @extend %underline;
         color: black;
-        h3 {
+        h2, h3 {
             @include flex(1);
             margin: 10px 0;
         }
@@ -231,10 +231,65 @@
 
 #home-video {
     text-align: center;
-
+    .bg-img {
+        position: absolute;
+        width: 20vw;
+        height: 20vh;
+        min-width: 160px;
+        min-height: 160px;
+        right: 10%;
+        top: -100%;
+        @extend %img-contain;
+        background-image: url("../img/flower02.png");
+        opacity: 0.6;
+        z-index: -1;
+    }
 }
 #home-contact {
-
+    img {
+        max-height: 600px !important;
+        max-width: 100%;
+        object-fit: contain;
+    }
+    .bg-img {
+        position: absolute;
+        width: 20vw;
+        height: 20vh;
+        min-width: 120px;
+        min-height: 120px;
+        left: 10%;
+        top: -30%;
+        @extend %img-contain;
+        background-image: url("../img/flower04.png");
+        opacity: 0.6;
+        z-index: -1;
+    }
+    @media (min-width: $screenXS) {
+        .bg-img {
+            left: 15%;
+        }
+    }
+    @media (min-width: $screenS) {
+        .bg-img {
+            left: 20%;
+        }
+    }
+    @media (min-width: $screenM) {
+        @include flex-flow(row, nowrap);
+        img {
+            width: 50%;
+        }
+        .bg-img {
+            min-width: 160px;
+            min-height: 160px;
+            left: -15%;
+            top: -120%;
+        }
+        .main-info {
+            @include align-items(flex-start);
+            padding-left: 5vw;
+        }
+    }
 }
 
 #privacy {

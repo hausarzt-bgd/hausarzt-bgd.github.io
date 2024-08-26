@@ -37,17 +37,17 @@ Sofern Sie mit uns Kontakt aufnehmen, um ein Angebot zu erfragen, erfolgt die Ve
 
 Empfänger der Daten sind ggf. technische Dienstleister, die für den Betrieb und die Wartung unserer Webseite als Auftragsverarbeiter tätig werden.
 
-#### 3. Speicherdauer
+<!-- #### 3. Speicherdauer
 
 Daten werden spätestens [Bitte Informationen ergänzen] nach Bearbeitung der Kontaktaufnahme gelöscht.
 
-Sofern es zu einem Vertragsverhältnis kommt, unterliegen wir den gesetzlichen Aufbewahrungsfristen. Diese betragen grundsätzlich 6 oder 10 Jahre aus Gründen der ordnungsmäßigen Buchführung und steuerrechtlichen Anforderungen.
+Sofern es zu einem Vertragsverhältnis kommt, unterliegen wir den gesetzlichen Aufbewahrungsfristen. Diese betragen grundsätzlich 6 oder 10 Jahre aus Gründen der ordnungsmäßigen Buchführung und steuerrechtlichen Anforderungen.-->
 
-#### 4. Bereitstellung vorgeschrieben oder erforderlich
+#### 3. Bereitstellung vorgeschrieben oder erforderlich
 
 Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Wir können Ihre Anfrage jedoch nur bearbeiten, sofern Sie uns erforderlichen Daten und erforderlichen Daten und den Grund der Anfrage mitteilen.
 
-#### 5. Widerspruch
+#### 4. Widerspruch
 
 Lesen Sie dazu die Informationen über Ihr Widerspruchsrecht nach Art. 21 DSGVO weiter unten.
 
