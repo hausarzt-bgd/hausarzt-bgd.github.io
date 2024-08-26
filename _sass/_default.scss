@@ -25,7 +25,7 @@ html, body {  /* % : zoom in & out for safari */
   scroll-behavior: smooth;
 }
 html ::selection, body ::selection {
-  background-color: $main-color;
+  background-color: $main-blue-10;
 }
 a:link, a:visited, a:hover, a:active {
   color: inherit;

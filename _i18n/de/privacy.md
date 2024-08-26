@@ -1,7 +1,7 @@
-### **Ihre Betroffenenrechte**  
-  
-Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:  
-  
+### **Ihre Betroffenenrechte**
+
+Unter den angegebenen Kontaktdaten können Sie gemäß EU-Datenschutz-Grundverordnung (DSGVO) jederzeit folgende Rechte ausüben:
+
 - Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),
 - Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),
 - Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),
@@ -13,41 +13,43 @@ Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit 
 
 Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.
 
-Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: [https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html](https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html).
+Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: [https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html](https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html).
 
 ---
 
-### **E-Mail-Kontakt**
+### **Verarbeitungstätigkeiten**
 
-#### 1. Beschreibung und Umfang der Datenverarbeitung
+Eine Kontaktaufnahme ist über die bereitgestellten E-Mail-Adressen möglich. In diesem Fall werden die mit der E-Mail übermittelten personenbezogenen Daten des Nutzers gespeichert. Hierzu zählen Datum und Uhrzeit des E-Mailversands, E-Mailadresse, IP-Adressen sowie Informationen zu den an der E-Mail-Kommunikation beteiligten Servern.
 
-Es ist eine Kontaktaufnahme über die bereitgestellte E-Mail-Adresse möglich. In diesem Fall werden die mit der E-Mail übermittelten personenbezogenen Daten des Nutzers gespeichert.
+Sie können Sie über die bereitgestellten Telefonnummern Kontakt zu uns aufnehmen. Hierbei erheben wir Protokolldaten, die Ihre Telefonnummer und die Dauer des Gesprächs beinhalten.
 
-Es erfolgt in diesem Zusammenhang keine Weitergabe der Daten an Dritte. Die Daten werden ausschließlich für die Verarbeitung der Konversation verwendet.
+Unabhängig von der gewählten Kommunikationsart erheben wir den Inhalt Ihrer Anfrage. Ihre Daten werden zum Zweck der individuellen Kommunikation mit Ihnen gespeichert.
 
-#### 2. Rechtsgrundlage für die Datenverarbeitung
+#### 1. Rechtsgrundlage
 
-Rechtsgrundlage für die Verarbeitung der Daten ist bei Vorliegen einer Einwilligung des Nutzers Art. 6 Abs. 1 lit. a DSGVO.
+Die Verarbeitung der Daten erfolgt auf der Grundlage eines berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO).
 
-Rechtsgrundlage für die Verarbeitung der Daten, die im Zuge einer Übersendung einer E-Mail übermittelt werden, ist Art. 6 Abs. 1 lit. f DSGVO. Zielt der E-Mail-Kontakt auf den Abschluss eines Vertrages ab, so ist zusätzliche Rechtsgrundlage für die Verarbeitung Art. 6 Abs. 1 lit. b DSGVO.
+Unser berechtigtes Interesse an der Verarbeitung Ihrer Daten ist die Ermöglichung einer unkomplizierten Kontaktaufnahme.
 
-#### 3. Zweck der Datenverarbeitung
+Sofern Sie mit uns Kontakt aufnehmen, um ein Angebot zu erfragen, erfolgt die Verarbeitung der Daten zur Durchführung vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO).
 
-Die Verarbeitung der personenbezogenen Daten dient uns allein zur Bearbeitung der Kontaktaufnahme. Im Falle einer Kontaktaufnahme per E-Mail liegt hieran auch das erforderliche berechtigte Interesse an der Verarbeitung der Daten.
+#### 2. Empfänger
 
-#### 4. Dauer der Speicherung
+Empfänger der Daten sind ggf. technische Dienstleister, die für den Betrieb und die Wartung unserer Webseite als Auftragsverarbeiter tätig werden.
 
-Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Für die personenbezogenen Daten, die per E-Mail übersandt wurden, ist dies dann der Fall, wenn die jeweilige Konversation mit dem Nutzer beendet ist. Beendet ist die Konversation dann, wenn sich aus den Umständen entnehmen lässt, dass der betroffene Sachverhalt abschließend geklärt ist.
+#### 3. Speicherdauer
 
-Die während des Absendevorgangs zusätzlich erhobenen personenbezogenen Daten werden spätestens nach einer Frist von sieben Tagen gelöscht.
+Daten werden spätestens [Bitte Informationen ergänzen] nach Bearbeitung der Kontaktaufnahme gelöscht.
 
-#### 5. Widerspruchs- und Beseitigungsmöglichkeit
+Sofern es zu einem Vertragsverhältnis kommt, unterliegen wir den gesetzlichen Aufbewahrungsfristen. Diese betragen grundsätzlich 6 oder 10 Jahre aus Gründen der ordnungsmäßigen Buchführung und steuerrechtlichen Anforderungen.
 
-Der Nutzer hat jederzeit die Möglichkeit, seine Einwilligung zur Verarbeitung der personenbezogenen Daten zu widerrufen. Nimmt der Nutzer per E-Mail Kontakt mit uns auf, so kann er der Speicherung seiner personenbezogenen Daten jederzeit widersprechen. In einem solchen Fall kann die Konversation nicht fortgeführt werden.
+#### 4. Bereitstellung vorgeschrieben oder erforderlich
 
-Natürlich können Sie uns aber auch per Telefon oder per Post erreichen.
+Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Wir können Ihre Anfrage jedoch nur bearbeiten, sofern Sie uns erforderlichen Daten und erforderlichen Daten und den Grund der Anfrage mitteilen.
 
-Alle personenbezogenen Daten, die im Zuge der Kontaktaufnahme gespeichert wurden, werden in diesem Fall gelöscht.
+#### 5. Widerspruch
+
+Lesen Sie dazu die Informationen über Ihr Widerspruchsrecht nach Art. 21 DSGVO weiter unten.
 
 ---
 
@@ -75,20 +77,23 @@ Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr ve
 
 #### Empfänger eines Widerspruchs
 
-Kuan-Ju Bondes ([kuanju.bondes@posteo.de](mailto:kuanju.bondes@posteo.de))
+{{ site.author1 }}  
+{{ site.author2 }}  
+{{ site.author3 }}  
+[info@hausarzt-bgd.de](mailto:info@hausarzt-bgd.de)
 
 ---
 
-### **Änderung unserer Datenschutzbestimmungen**
+### Änderung unserer Datenschutzerklärung
 
 Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
 
 ---
 
-### **Fragen an den Datenschutzbeauftragten**
+### Fragen zum Datenschutz
 
-Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person: Kuan-Ju Bondes ([kuanju.bondes@posteo.de](mailto:kuanju.bondes@posteo.de))
+Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an den oben genannten Verantwortlichen.
 
 ---
 
-*Die Datenschutzerklärung wurde mithilfe der activeMind AG erstellt, den Experten für [externe Datenschutzbeauftragte](https://www.activemind.de/datenschutz/datenschutzbeauftragter/) (Version #2020-09-30).*
+*Diese Datenschutzerklärung wurde mit Hilfe der activeMind AG erstellt – den Experten für [externe Datenschutzbeauftragte](https://www.activemind.de/datenschutz/datenschutzbeauftragter/) (Version #2024-08-06).*

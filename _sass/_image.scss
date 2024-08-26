@@ -5,10 +5,16 @@
  */
 
  /* mobile first < 576px */
-.icon-lang { @extend %img-contain; background-image: url("../img/icon/icon-lang.svg"); }
-.icon-link { @extend %img-contain; background-image: url("../img/icon/icon-link.svg"); }
+.img-logo   { @extend %img-contain; background-image: url("../img/logo.png"); }
+.img-flower02 { @extend %img-contain; background-image: url("../img/flower02.png"); }
+.img-flower03 { @extend %img-contain; background-image: url("../img/flower03.png"); }
+.img-flower04 { @extend %img-contain; background-image: url("../img/flower04.png"); }
+.icon-phone { @extend %img-contain; background-image: url("../img/icon/icon-phone.svg"); }
+.icon-mail  { @extend %img-contain; background-image: url("../img/icon/icon-mail.svg"); }
+.icon-home  { @extend %img-contain; background-image: url("../img/icon/icon-home.svg"); }
 
  /* fixed size */
+.icon20 { width: 20px; height: 20px; } 
 .icon40 { width: 40px; height: 40px; }
 
 /* responsive size */

@@ -1,0 +1,269 @@
+#home-landing-page {
+    .main-photo {
+        @extend %img-cover;
+        height: 60vh;
+        min-height: 250px;
+        max-height: 100%;
+        background-image: url("../img/photo/group.jpg");
+        background-position: 47% 30%;
+    }
+    .main-info {
+        padding: 60px 20px;
+        background-color: #E5E5EA;
+        @extend %Grid-column;
+        @extend %Grid-column--center;
+    }
+    .bg-img {
+        position: absolute;
+        width: 50vw;
+        height: 50vh;
+        min-width: 150px;
+        min-height: 150px;
+        left: -10vw;
+        bottom: -10vh;
+        @extend %img-contain;
+        background-image: url("../img/flower03.png");
+        opacity: 0.8;
+    }
+    .office-hours {
+        z-index: 999;
+        h2 {
+            margin-bottom: 40px;
+        }  
+        .weekday {
+            width: 60px;
+        }
+        .time {
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        .note {
+            color: red;
+            font-weight: 500 !important;
+            line-height: 1.5;
+        } 
+    }
+    @media (min-width: $screenM) {
+        .main-photo {
+            height: 50vh;
+            min-height: 350px;
+        }
+        .main-info {
+            padding: 80px 160px;
+            @include align-items(flex-end);
+            @include justify-content(center);
+        }
+    }
+    @media (min-width: $screenXL) {
+        height: calc(100vh - 230px);
+        min-height: 600px;
+        @include flex-direction(row-reverse);
+        .main-photo {
+            height: 100%;
+            background-position: 45% 30%;
+        }
+        .main-info {
+            padding: 100px;
+        } 
+    }
+}
+
+.section {
+    padding: 60px 0;
+    .section-title {
+        color: $main-blue;
+        margin-bottom: 20px;
+    }
+    .section-des {
+        text-align: center;
+        margin-bottom: 60px !important;
+    }
+    .highlight-info {
+        @extend %underline;
+        color: black;
+        h3 {
+            @include flex(1);
+            margin: 10px 0;
+        }
+    }
+    @media (min-width: $screenL) {
+        padding: 100px 0;
+    }
+}
+#home-drs {
+    .section-des {
+        @extend %Grid-column;
+        @extend %Grid-column--center;
+    }
+    .col-dr {
+        @extend %Grid-column; 
+        @include flex(100%);
+        margin-bottom: 40px;
+    }
+    .dr-photo {
+        @extend %img-cover;
+        background-position: 50% 0%;
+        z-index: -999;
+        width: 100%;
+        aspect-ratio: 2/3;
+        
+    }
+    .dr-info {
+        @include flex(1);
+        width: 100%;
+        position: relative;
+        padding: 10px 40px; //
+        margin-top: -110px; //
+        .bg-title {
+            z-index: -100;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 110px; //
+            background-color: $white-40;
+            @include backdrop-filter(blur(5px));
+            @include flex(1);
+        }
+        .dr-info-title {
+            z-index: 100;
+            padding-bottom: 20px;
+            height: 100px; //height(title) - padding-top
+        }
+        .dr-name {
+            font-weight: 600;
+            line-height: 2;
+        }
+        .bg-des {
+            z-index: -100;
+            position: absolute;
+            top: 110px; //
+            right: 0;
+            left: 0;
+            height: 240px;
+            background-color: #E5E5EA;
+            @include flex(1);
+        }
+        .dr-info-des {
+            z-index: 100;
+            padding: 20px 0;
+        }
+        .weekday {
+            width: 40px;
+        }
+        .time {
+            line-height: 2;
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    @media (min-width: $screenXS) {
+        .section-des {
+            @include flex-flow(row, wrap);
+        } 
+        .col-dr {
+            @include flex-flow(row, wrap);
+        }
+        .dr-photo {
+            width: 50vw;
+            max-width: 200px;
+            aspect-ratio: 2/3;
+        }
+        .dr-info {
+            padding: 0 0 0 20px;
+            margin-top: 0;
+            .bg-des {
+                background-color: white;
+            }
+        }
+    }
+    @media (min-width: $screenS) {
+        .dr-photo {
+            max-width: 240px;
+        }
+        .dr-info {
+            padding: 20px 0 20px 40px;
+        }
+    }
+    @media (min-width: $screenL) {
+        #dr-eva { @include order(2); }
+        #dr-johannes { @include order(1); }
+        #dr-peter { @include order(3); }
+        .dr-office-hours {
+            @include flex-flow(row, nowrap);
+            @include align-items(flex-start);
+        }
+        .col-dr {
+            @include flex(1);
+            margin: 0 4vw 0 0;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .dr-photo {
+            width: 100%;
+            max-width: 600px;
+        }
+        .dr-info {
+            padding: 20px 30px;
+            margin-top: -130px;
+            .bg-title {
+                height: 130px;
+            }
+            .dr-info-title {
+                height: 110px;
+            }
+            .bg-des {
+                top: 130px;
+                height: 240px;
+                background-color: #E5E5EA;
+            }
+        }
+    }
+    @media (min-width: $screenXL) {
+        .dr-info{
+            padding: 20px 40px;
+        }
+    }
+} 
+
+#home-video {
+    text-align: center;
+
+}
+#home-contact {
+
+}
+
+#privacy {
+    .page-title-container {
+      margin: 0 0 5vh 0;
+      padding: 50px 0;
+      background-color: $main-color;
+      color: white;
+    }
+  }
+  #privacy-content {
+    margin-bottom: 20vh;
+    hr { 
+      margin: 50px 0;
+      border: 1px solid transparent; 
+    }
+    h2 { margin-bottom: 40px; }
+    li { margin-bottom: 10px; }
+    h3, h4, p, li:last-child { margin-bottom: 20px; }
+    a {
+      @extend %text-hover;
+      @extend %out; 
+    }
+    @media (min-width: $screenL) {
+      .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100px;
+        align-self: flex-start; /* <-- this is the fix */
+      }
+    }
+  }

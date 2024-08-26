@@ -1,6 +1,9 @@
-Verantwortliche im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:
+Verantwortliche im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), sind:
   
-Kuan-Ju Bondes  
-Am Bergheim 12  
-83471 Schönau am Königssee  
-[kuanju.bondes@posteo.de](mailto:kuanju.bondes@posteo.de)
+**{{ site.author1 }}**  
+**{{ site.author2 }}**  
+**{{ site.author3 }}**  
+
+Franziskanerpl. 6, 3.O.G
+83471 Berchtesgaden
+[info@hausarzt-bgd.de](mailto:info@hausarzt-bgd.de)

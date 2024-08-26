@@ -55,6 +55,10 @@
     -webkit-filter : $property;
             filter : $property; // none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url()
 }
+@mixin backdrop-filter ($property) {
+    -webkit-backdrop-filter : $property;
+            backdrop-filter : $property; // none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url()
+}
 
 /* for flexgrid */
 @mixin flexbox { 
@@ -98,6 +102,10 @@
 @mixin flex-basis ($value) {
     -webkit-flex-basis: $value;
             flex-basis: $value; // auto | positive length
+}
+@mixin flex-direction ($value) {
+    -webkit-flex-direction: $value;
+            flex-direction: $value; // row | row-reverse | column | column-reverse
 }
 @mixin justify-content ($position) {
     -webkit-justify-content: $position;

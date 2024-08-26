@@ -19,14 +19,51 @@
 body {
   background-color: transparent;
   @include transition(background-color 1s ease);
+  .flex30, 
+  .flex40,
+  .flex50,
+  .flex60,
+  .flex70 {
+    width: 100%;
+  }
+  @media (min-width: $screenXL) {
+    .flex30 { 
+      @include flex(0 0 30%); 
+    }
+    .flex40 {
+      @include flex(0 0 40%);
+    }
+    .flex50 {
+      @include flex(1);
+      padding: 0 50px;
+      &:first-child {
+        padding-left: 0px;
+      }
+      &:last-child {
+        padding-right: 0px;
+      }
+    }
+    .flex60,
+    .flex70 { 
+      @include flex(1); 
+      &.left {
+        padding-right: 100px;
+      }
+      &.right{
+        padding-left: 100px;
+      } 
+    }
+  }
+}
+.transbox {
+  width: 100%;
+  position: relative;
 }
 .container60 {
   width: calc(100% - 40px);
   margin: 0 auto;
-  .flex30, 
-  .flex70-left, 
-  .flex70-right, 
-  .flex50 {
+  .flex30,
+  .flex70-right {
     width: 100%;
   }
   &.extend-left {
@@ -61,26 +98,12 @@ body {
   }
   @media (min-width: $screenL) {
     width: 80%;
-    .flex30 { 
-      @include flex(0 0 30%); 
-    }
-    .flex70-left { 
-      @include flex(1); 
-      padding-right: 100px;
+    .flex30 {
+      @include flex(0 0 30%);
     }
     .flex70-right {
       @include flex(1);
       padding-left: 100px;
-    }
-    .flex50 {
-      @include flex(1);
-      padding: 0 50px;
-      &:first-child {
-        padding-left: 0px;
-      }
-      &:last-child {
-        padding-right: 0px;
-      }
     }
     &.extend-left {
       width: 90%;
@@ -165,77 +188,16 @@ h1, h2, h3, h4, h5, h6, p {
     mark { background-size: 100% 100%; }
   }
 }
-/* cursor */
-#follower { // hide in mobile except landing page -> see show-on-scroll.js
-  display: none;
-  position: fixed;
-  pointer-events: none;
-  z-index: 1050; // same heirachy as modal
-  .cursor {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    margin-top: -40px;
-    margin-left: -40px;
-    color: transparent;
-    border-radius: 50%;
-    background-color: $main-color;
-    opacity: 1;
-    will-change: transform;
-    @include transform(scale(0.15));
-    @include transition(transform 0.3s ease);
-  }
-  /*
-  .cursor-web {
-    z-index: -999;
-    opacity: 0.5;
-    @include transform(scale(2.8));
-    background-color: $shareco;
-  }
-  .cursor-app {
-    z-index: -999;
-    opacity: 0.5;
-    @include transform(scale(2.3));
-    background-color: $myoncare;
-  }
-  .cursor-product {
-    z-index: -999;
-    opacity: 0.5;
-    @include transform(scale(3.5));
-  }
-  */
-  .cursor-text {
-    z-index: 999 !important;
-    opacity: 0.8;
-    @include transform(scale(1));
-    h6 {
-      color: black;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      @extend %Grid, %Grid--center, %Grid--middle;
-    }
-    &:focus {
-      @include transform(scale(0.9));
-    }
-  }
-  .cursor-wave {
-    @include transform(scale(1));
-    background-color: transparent;
-    background-image: url('../img/icon/wave.gif');
-    @extend %img-contain;
-  }
-  .cursor-back {
-    z-index: 999 !important;
-    opacity: 0.8;
-    @include transform(scale(0.5));
-    background-image: url('../img/icon/icon-close.svg');
-    @extend %img-contain;
-  }
-  @media (min-width: $screenXXS) {
+.underline, %underline {
+  &::after {
+    content: '';
     display: block;
+    width: 100%;
+    height: 1px;
+    background: black;
   }
 }
+
 /* components */
 .dropdown {
   position: relative;
@@ -266,7 +228,7 @@ h1, h2, h3, h4, h5, h6, p {
     a:hover {
       color: inherit !important;
       border-radius: 5px;
-      background-color: $bg-grey;
+      background-color: white;
     }
   }
   &:hover {
@@ -394,7 +356,7 @@ h1, h2, h3, h4, h5, h6, p {
       .tag {
         margin: 0 20px 10px -10px;
         color: $black-50;
-        background-color: $bg-grey;
+        background-color: white;
       }
       .hr {
         width: 100%;
@@ -488,96 +450,66 @@ h1, h2, h3, h4, h5, h6, p {
   position: fixed;
   overflow: hidden;
 }
-#nav, #mobile-nav {
+#nav {
   z-index: 999;
   width: 100%;
-  position: fixed;
+  //position: fixed;
   top: 0;
-  @include transition(top 0.3s ease);
-  #nav-logo {
-    h6 { margin-left: 2px; }
+  padding: 20px 0;
+  .img-logo {
+    width: 85px;
+    height: 100px;
+    margin-right: 20px;
   }
-}
-#nav {
-  display: none;
-  padding: 15px 0;
-  .nav-item {
-    margin: 0 20px;
-    padding: 5px 0; // distance to .dropdown-content.text
+  .logo-dr-name {
+    margin-top: 10px;
+    line-height: 1;
+    color: $main-blue;
   }
   #nav-right {
     display: none;
-    .icon-resume {
-      margin: 0 10px;
+    .nav-info {
+      @extend %Grid;
+      @extend %Grid--middle;
+      margin: 5px 0;
     }
-    .icon-lang { 
-      margin-left: 10px;
-     }
-  }
-  @media (min-width: $screenS) {
-    display: block;
-    padding: 15px 0;
-    #nav-right { display: flex; }
-  }
-}
-#mobile-nav {
-  display: block;
-  padding: 10px 0;
-  overflow-y: auto;
-  #mobile-menu {
-    padding-bottom: 40px;
-    background-color: white;
-    .menu-item {
-      height: 75px;
-      margin: 20px 0;
-      &:hover {
-        padding-left: 10px;
-      }
-      &.active {
-        border-right: 5px solid $main-color;
-        padding-left: 0 !important;
-        background-color: $lu-yellow-10;
-      }
-    }
-    .menu-item-row {
-      margin: 10px;
-      border-radius: 5px;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-    .menu-left {
-      height: 100%;
-      @include flex(1);
-      @extend %img-cover;
-      border-radius: 5px;
-    }
-    .menu-right {
-      @include flex(3);
-      padding-left: 20px;
-    }
-    h6 {
-      margin: 40px 0 10px 0;
-    }
-    h5 {
-      letter-spacing: 1.2px;
+    .nav-info-icon {
+      margin-right: 20px;
     }
   }
   @media (min-width: $screenS) {
-    display: none;
+    padding: 40px 20px;
+    .img-logo {
+      width: 100px;
+      height: 120px;
+    }
+    .logo-dr-name {
+      margin-top: 16px;
+      font-size: 20px;
+    }
+    #nav-right { 
+      display: flex; 
+    }
+  }
+  @media (min-width: $screenM) {
+
+  }
+  @media (min-width: $screenL) {
+    .img-logo {
+      width: 130px;
+      height: 150px;
+    }
+    .logo-dr-name {
+      margin-top: 20px;
+      font-size: 24px;
+    }
   }
 }
+/*
 .nav-scrollup {
   background-color: white;
   box-shadow: 0px 2px #F9F9F9;
   padding: 5px 0 !important;
-  #nav-logo {
-    h2 { font-size: 20px !important; }
-    h6 { display: none; }
-  }
   @media (min-width: $screenS) {
     #nav-logo {
       h2 { font-size: 24px !important; }
@@ -588,17 +520,15 @@ h1, h2, h3, h4, h5, h6, p {
     }
   }
 }
+*/
 #footer {
-  padding: 10px 0;
-  #footer-icons {
-    width: 100%;
-    padding: 10px 0;
-  }
+  padding: 40px 0;
+  text-align: center;
   .footer-web { display: none; }
-  .icon-mail { display: flex; }
-  @media (min-width: $screenS) {
-    #footer-icons { width: auto; }
+  @media (min-width: $screenM) {
+    #footer-text {
+      @include flex-flow(row, wrap);
+    }
     .footer-web { display: flex; }
-    .icon-mail { display: none; }
   } 
 }

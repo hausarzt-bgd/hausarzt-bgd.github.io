@@ -6,10 +6,170 @@ keywords :
 description : 
 ---
 
-<div id="home-landing-page" class="transbox">
-    <div class="title-container container60 Grid-column Grid-column--middle" style="height: 100vh;">
-        Landing Page
+<div id="home-landing-page" class="Grid">
+    <div class="flex60 main-photo"></div>
+    <div class="flex40 main-info transbox">
+        <div class="bg-img"></div>
+        <div class="office-hours">
+            <h2>Öffnungszeiten</h2>
+            <div class="Grid Grid--top">
+                <h3 class="weekday">Mo</h3>
+                <h3 class="time">08:00 – 12:30</h3>
+                <h3 class="time">15:00 – 18:00</h3>
+            </div>
+            <div class="Grid Grid--top">
+                <h3 class="weekday">Di</h3>
+                <h3 class="time">08:00 – 12:30</h3>
+            </div>
+            <div class="Grid Grid--top">
+                <h3 class="weekday">Mi</h3>
+                <h3 class="time">08:00 – 12:30</h3>
+                <h3 class="time">15:00 – 19:00</h3>
+            </div>
+            <div class="Grid Grid--top">
+                <h3 class="weekday">Do</h3>
+                <h3 class="time">08:00 – 12:30</h3>
+            </div>
+            <div class="Grid Grid--top">
+                <h3 class="weekday">Fr</h3>
+                <h3 class="time">08:00 – 17:00</h3>
+            </div>
+            <div style="margin: 20px 0;">
+                <h3 class="note">Nächste Schließungszeiten :<br>03.10. Tag der Deutschen Einheit</h3>
+            </div>
+        </div>
     </div>
+</div>
+
+<div id="home-drs" class="section container60">
+    <div class="Grid-column Grid-column--center">
+        <h2 class="section-title">Sprechzeiten</h2>
+        <div class="section-des Grid Grid--middle">
+            <h3 style="margin-right: 16px;">Termin nach telefonischer Vereinbarung</h3>
+            <a href="tel: {{ site.tel }}" class="highlight-info Grid Grid--middle">
+                <div class="icon-phone icon20" style="margin-right: 10px;"></div>
+                <h3>{{ site.tel }}</h3>
+            </a>
+        </div>
+    </div>
+    <div class="dr-office-hours Grid-column Grid-column--center">
+        <div id="dr-eva" class="col-dr">
+            <div class="dr-photo" style="background-image: url('img/photo/dr-eva.jpg');">
+            </div>
+            <div class="dr-info">
+                <div class="bg-title"></div>
+                <div class="dr-info-title">
+                    <h3 class="dr-name">Eva Langelüddecke</h3>
+                    <h5 class="dr-spec">Fachärztin Innere Medizin 
+                                        <br>Hausärztliche Versorgung</h5>
+                </div>
+                <div class="bg-des"></div>
+                <div class="dr-info-des">
+                    <div class="Grid Grid--middle">
+                        <h5 class="weekday">Mo</h5>
+                        <h5 class="time">9:00-12:00</h5>
+                        <h5 class="time">15:00-18:00</h5>
+                    </div>
+                    <div class="Grid Grid--middle">
+                        <h5 class="weekday">Di</h5>
+                        <h5 class="time">9:00-12:00</h5>
+                    </div>
+                    <div class="Grid Grid--middle">
+                        <h5 class="weekday">Mi</h5>
+                        <h5 class="time">9:00-12:00</h5>
+                        <h5 class="time">15:00-19:00</h5>
+                    </div>
+                    <div class="Grid Grid--middle">
+                        <h5 class="weekday">Fr</h5>
+                        <h5 class="time">9:00-12:00</h5>
+                    </div>
+                    <h5 style="margin-top: 20px;">und nach Vereinbarung</h5>
+                </div>
+            </div>
+        </div>
+        <div id="dr-johannes" class="col-dr">
+            <div class="dr-photo" style="background-image: url('img/photo/dr-johannes.jpg');">
+            </div>
+            <div class="dr-info">
+                <div class="bg-title"></div>
+                <div class="dr-info-title">
+                    <h3 class="dr-name">Johannes Bondes</h3>
+                    <h5 class="dr-spec">Facharzt Allgemeinmedizin</h5>
+                </div>
+                <div class="bg-des"></div>
+                <div class="dr-info-des">
+                    <div class="Grid Grid--middle">
+                        <h5 class="weekday">Mo</h5>
+                        <h5 class="time">8:00-12:30</h5>
+                    </div>
+                    <div class="Grid Grid--middle">
+                        <h5 class="weekday">Di</h5>
+                        <h5 class="time">8:00-12:30</h5>
+                    </div>
+                    <div class="Grid Grid--middle">
+                        <h5 class="weekday">Mi</h5>
+                        <h5 class="time">8:00-12:30</h5>
+                        <h5 class="time">15:00-18:00</h5>
+                    </div>
+                    <div class="Grid Grid--middle">
+                        <h5 class="weekday">Do</h5>
+                        <h5 class="time">8:00-12:30</h5>
+                    </div>
+                    <div class="Grid Grid--middle">
+                        <h5 class="weekday">Fr</h5>
+                        <h5 class="time">8:00-17:00</h5>
+                    </div>
+                    <h5 style="margin-top: 20px;">und nach Vereinbarung</h5>
+                </div>
+            </div>
+        </div>
+        <div id="dr-peter" class="col-dr">
+            <div class="dr-photo" style="background-image: url('img/photo/dr-peter.jpg');">
+            </div>
+            <div class="dr-info">
+                <div class="bg-title"></div>
+                <div class="dr-info-title">
+                    <h3 class="dr-name">Peter Bondes</h3>
+                    <h5 class="dr-spec">Facharzt Allgemeinmedizin
+                                        <br>Homöopathie</h5>
+                </div>
+                <div class="bg-des"></div>
+                <div class="dr-info-des">
+                    <div class="Grid Grid--middle">
+                        <h5 class="weekday">Mo</h5>
+                        <h5 class="time">8:00-12:30</h5>
+                        <h5 class="time">15:00-18:00</h5>
+                    </div>
+                    <div class="Grid Grid--middle">
+                        <h5 class="weekday">Do</h5>
+                        <h5 class="time">8:00-12:30</h5>
+                    </div>
+                    <div class="Grid Grid--middle">
+                        <h5 class="weekday">Fr</h5>
+                        <h5 class="time">8:00-12:30</h5>
+                    </div>
+                    <h5 style="margin-top: 20px;">und nach Vereinbarung</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="home-video" class="section container60">
+    <div class="Grid-column Grid-column--center">
+        <h2 class="section-title">Unsere Praxis</h2>
+        <a class="section-des highlight-info Grid Grid--middle" href="{{ site.address_map }}" target="_blank">
+            <div class="icon-home icon20" style="margin-right: 10px;"></div>
+            <h3>Franziskanerpl. 6, 3.O.G, 83471 Berchtesgaden</h3>
+        </a>
+    </div>
+    <video controls autoplay width="100%" height="auto">
+        <source src="/video/praxis_video.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div id="home-contact">
+
 </div>
 
 <script type="text/javascript" src="{{ site.baseurl_root }}/js/show-on-scroll.js"></script>

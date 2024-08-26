@@ -1,31 +1,13 @@
-<div id="footer" class="Grid Grid--center Grid--middle">
-    <div id="footer-text" class="Grid Grid--middle">
-        <a class="footer-web" href="mailto: {{ site.email }}">
-            <h6 class="text-hover in" style="margin-top: 1px;">kuanju.bondes@posteo.de</h6>
+<div id="footer" class="container60 Grid-column Grid-column--center">
+    <div id="footer-text" class="Grid-column Grid-column--center">
+        <a href="mailto:{{ site.email }}">
+            <h6 class="text-hover in" style="margin-top: 1px;">{{ site.email }}</h6>
         </a>
         <h6 class="footer-web" style="margin: 0 20px 1px 20px;"> | </h6>
-        <h6>© <span id="theYear"></span> KJ Bondes</h6>
-        <h6 style="margin: 0 20px 1px 20px;"> | </h6>
+        <h6>© <span id="theYear"></span> {{ site.author }}</h6>
+        <h6 class="footer-web" style="margin: 0 20px 1px 20px;"> | </h6>
         <a href="{{ site.baseurl }}/privacy.html">
             <h6 class="text-hover in" style="margin-top: 1px;">{% t title.privacy %}</h6>
-        </a>
-        <h6 class="footer-web" style="margin: 0 10px 1px 20px;"> | </h6>
-    </div>
-    <div id="footer-icons" class="Grid Grid--center">
-        <a href="{{ site.linkedin }}" target="_blank">
-            <div class="icon50-r icon-hover">
-                <img src="{{ site.baseurl_root }}/img/icon/icon-linkedin.svg" />
-            </div>
-        </a>
-        <a href="{{ site.xing }}" target="_blank">
-            <div class="icon50-r icon-hover">
-                <img src="{{ site.baseurl_root }}/img/icon/icon-xing.svg" />
-            </div>
-        </a>
-        <a href="mailto: {{ site.email }}">
-            <div class="icon-mail icon50-r icon-hover">
-                <img src="{{ site.baseurl_root }}/img/icon/icon-mail.svg" />
-            </div>
         </a>
     </div>
 </div>

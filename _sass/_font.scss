@@ -1,44 +1,37 @@
 /* fonts.scss */
 
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Molengo');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* 100 Thin / 200 Extra Light / 300 Light / 400 Regular / 500 Medium / 600 Semibold / 700 Bold / 800 Extra Bold / 900 Black */
 
 @font-face {
-  font-family: "Philosopher";
-  src: url("../fonts/Philosopher/Philosopher-Regular.ttf");
-  font-weight:400;
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+  font-weight:700;
 }
 @font-face {
-  font-family: "Philosopher";
-  src: url("../fonts/Philosopher/Philosopher-Bold.ttf");
-  font-weight: 700;
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
+  font-weight: 500;
 }
 @font-face {
-  font-family: "Molengo";
-  src: url("../fonts/Molengo/Molengo-Regular.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
-  font-weight: 400;
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 300;
 }
 
-$font-main: "Molengo", sans-serif;
-$font-heading: "Philosopher", serif;
-$font-alt: "Mobtserrat", sans-serif;
+$font-main: "Poppins", sans-serif;
+$font-heading: "Poppins", sans-serif;
+//$font-alt: "Mobtserrat", sans-serif;
 
 
 body {
   font-family: $font-main;
-  color: black;
+  color: $content-color;
 }
 h1, h2, h3, h4, h5, h6, p, br, ul, li {
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
 }
 br {
@@ -46,37 +39,41 @@ br {
 }
 
 
-
-h1 { //page title
+h1 { //logo
 	font-family: $font-heading;
-  font-size: 27px;
+  font-weight: 700;
+  font-size: 20px;
   line-height: 1.2;
+  color: $main-blue;
 }
-h2 { //logo, project title
+h2 { //section title(+h5), highlight info(tel)
   font-family: $font-heading;
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
 }
-h3 { //title
-	font-size: 20px;
-  letter-spacing: 0.5px;
+h3 { //title(+p), highlight info
+	font-size: 16px;
+  line-height: 1.2;
 }
-h4 { //subtitle(+p), content(+h5 description as title)
-	font-size: 18px;
-  letter-spacing: 0.5px;
+h4 { //highlight content
+	font-size: 16px;
+  line-height: 2;
 }
-h5 { //description
+h5 { //description, info
   font-size: 16px;
-  letter-spacing: 0.5px;
+  font-weight: 300; 
+  line-height: 1.5;
 }
-h6 { //button & navigation & footer
+h6 { // footer
   font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
+  font-weight: 300;
+  line-height: 2;
 }
-p, li {
-  font-size: 16px;
+
+p, li { //text
+  font-size: 14px;
+  font-weight: 300;
   line-height: 1.5;
   width: 100%;
   &.note {
@@ -86,23 +83,25 @@ p, li {
 }
 
 @media (min-width: $screenS) {
-  h1 { font-size: 32px; }
-  h2 { font-size: 28px; }
-  h3 { font-size: 22px; }
-  h4 { font-size: 20px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 18px; }
+  h6 { font-size: 16px; }
+  p, li { font-size: 16px; }
+}
+
+@media (min-width: $screenM) {
+  h1 { font-size: 30px; }
+  h2 { font-size: 30px; line-height: 1; }
 }
 
 @media (min-width: $screenL) {
-  h1 { font-size: 40px; }
+  h1 { font-size: 32px; }
   h2 { font-size: 32px; }
-  h3 { font-size: 26px; }
-  h4 { font-size: 22px; }
-  h5 { font-size: 18px; }
-  h6 { font-size: 16px; }
-  p, li { font-size: 18px; }
+  h3 { font-size: 20px; }
 }
 
 @media (min-width: $screenXL) {
-  h1 { font-size: 44px; }
+  h1 { font-size: 36px; }
   h2 { font-size: 36px; }
 }

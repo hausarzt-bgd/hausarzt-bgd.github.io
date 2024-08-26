@@ -1,7 +1,13 @@
 # Site settings
 title: "Hausärztliche Gemeinschaftspraxis"
 author: "Hausärztliche Gemeinschaftspraxis"
+author1: "Eva Langelüddecke"
+author2: "Johannes Bondes"
+author3: "Peter Bondes"
+tel: "+49 (0)8652 66014"
 email: info@hausarzt-bgd.de
+address: "Franziskanerpl. 6, 3.O.G, 83471 Berchtesgaden"
+address_map: "https://www.google.com/maps/place/Haus%C3%A4rztliche+Gemeinschaftspraxis+-+Bondes+%26+Langel%C3%BCddecke/@47.6295797,12.9981894,17z/data=!3m1!5s0x4776ec9271d7b225:0x324646c46120725d!4m16!1m9!3m8!1s0x4776ec9244b8d5bd:0x68e802d43474e11b!2sHaus%C3%A4rztliche+Gemeinschaftspraxis+-+Bondes+%26+Langel%C3%BCddecke!8m2!3d47.6295797!4d13.0007643!9m1!1b1!16s%2Fg%2F1td46t0p!3m5!1s0x4776ec9244b8d5bd:0x68e802d43474e11b!8m2!3d47.6295797!4d13.0007643!16s%2Fg%2F1td46t0p?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D"
 description: home.description
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hausarzt-bgd.github.io"

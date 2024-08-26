@@ -24,7 +24,7 @@ home :
   web : Web
   app : App
   product : Produkt
-  description : "Hallo! Ich bin Kuan-Ju Bondes - ein <mark>Produktdesigner</mark> wohnt in Deutschland. <br>Mit Erfahrung in <mark>Design</mark> und <mark>Usability</mark> für sowohl physische als auch digitale Produkte."
+  description : "Hallo! Ich bin {{ site.author }} - ein <mark>Produktdesigner</mark> wohnt in Deutschland. <br>Mit Erfahrung in <mark>Design</mark> und <mark>Usability</mark> für sowohl physische als auch digitale Produkte."
   featured : "Vorgestellte Projekte"
   more : "Mehr Projekte"
   more-text : "Finden Sie mehr Arbeit hier"
@@ -94,7 +94,7 @@ shareco :
   summary : "Konzeptentwurf einer individuellen, umweltfreundlichen und benutzerfreundlichen Waschmaschine zur gemeinschaftlichen Nutzung"
   info-timeframe : "03.2016 – 06.2016 (Masterarbeit)"
   info-supervisor : "Prof. Peter Laabs, Prof. Gerd Flohr"
-  info-designer : "Kuan-Ju Bondes"
+  info-designer : "{{ site.author }}"
   overview-title : "Neukonzeption und digitale Dienstleistung einer Gemeinschaftswaschmaschine"
   overview-text-1 : "Über 90% der deutschen Haushalte besitzt eine Waschmaschine, die jedoch meist nur 2-3 Mal pro Woche in Benutzung ist. <mark>Jedes Jahr fallen in Deutschland ca. 1,8 Mio. Tonnen Elektroschrott an, der größte Teil davon sind Haushaltsgeräte.</mark> Die herkömmlichen Gemeinschaftswaschmaschinen besitzen jedoch nur einen geringen Marktanteil. Motive hierfür sind außer baulichen und gebäudetechnischen Aspekten die Waschgewohnheit, hygienische Bedenken, zeitliche Verfügbarkeit und Bequemlichkeit."
   overview-text-2 : "Meine Produktvision ist es, durch die gemeinschaftliche Nutzung von Waschmaschinen in Mehrfamilienhäusern die Umwelt zu schonen. Ziel der Masterarbeit ist ein Waschmaschinen-Konzept, <mark>das Difizite herkömmlicher Lösungen beseitigt, um die Akzeptanz von gemeinschaftlich genutzten Waschmaschinen beim Kunden zu verbessern.</mark>"
@@ -121,7 +121,7 @@ yumiwi :
   summary : "Onlineplattform zur einfachen Organisation eines Kochenevents"
   info-timeframe : "10.2015 – 01.2016"
   info-supervisor : "Prof. Diana Simon"
-  info-designer : "Jie Ding, Johannes Hetzold, Kuan-Ju Bondes, Sandra Püschel"
+  info-designer : "Jie Ding, Johannes Hetzold, {{ site.author }}, Sandra Püschel"
   info-role : "User Journey, User Flows, Information Architechture, Wireframing, UI Design, Prototyping"
   overview-title : "Bringen Flüchtlinge und Gastgebergemeinschaften durch interessengesteuerte Vernetzung und Kulturaustausch einander näher."
   overview-text-1 : "In der heutigen Zeit sind die gesellschaftlichen Strukturen starken Veränderungen unterworfen. Besonders durch die vermehrte Zuwanderung wird Deutschland in dem nächsten Jahrzehnt vor große Herausforderungen Gestellt."
