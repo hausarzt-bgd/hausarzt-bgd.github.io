@@ -163,25 +163,31 @@
             <div style="margin: 20px 0;">
                 <h3 class="note">Nächste Schließungszeiten :</h3>
                 
-                    <div id="1206" class="Grid Grid--middle" style="display: none;">
-                        <h3 class="note" style="margin-right: 10px;">Fr. 06.12.</h3>
-                        <h3 class="note">Nikolaustag - Nachmittag</h3>
+                    <div id="1206" class="dayoff" style="display: none;">
+                        <div class="Grid Grid--middle">
+                            <h3 class="note" style="margin-right: 10px;">Fr. 06.12.</h3>
+                            <h3 class="note">Nikolaustag - Nachmittag</h3>
+                        </div>
+                        
+                            <h3 style="color: red;">nur eine Notfall Sprechstunde von 15-17 Uhr</h3>
+                        
                     </div>
-                    
-                        <h3 style="color: red;">nur eine Notfall Sprechstunde von 15-17 Uhr</h3>
-                    
                 
-                    <div id="1225" class="Grid Grid--middle" style="display: none;">
-                        <h3 class="note" style="margin-right: 10px;">25.-26.12.</h3>
-                        <h3 class="note">Weihnachten</h3>
+                    <div id="1225" class="dayoff" style="display: none;">
+                        <div class="Grid Grid--middle">
+                            <h3 class="note" style="margin-right: 10px;">25.-26.12.</h3>
+                            <h3 class="note">Weihnachten</h3>
+                        </div>
+                        
                     </div>
-                    
                 
-                    <div id="0101" class="Grid Grid--middle" style="display: none;">
-                        <h3 class="note" style="margin-right: 10px;">01.01.2025</h3>
-                        <h3 class="note">Neujahr</h3>
+                    <div id="0101" class="dayoff" style="display: none;">
+                        <div class="Grid Grid--middle">
+                            <h3 class="note" style="margin-right: 10px;">01.01.2025</h3>
+                            <h3 class="note">Neujahr</h3>
+                        </div>
+                        
                     </div>
-                    
                 
             </div>
         </div>
@@ -375,8 +381,6 @@
     <img src="/img/logo.png" width="100%" height="auto" />
 </div>
 
-<script type="text/javascript" src="/js/show-on-scroll.js"></script>
-
 <script type="text/javascript">
     /* pass all holidays here */
     var dayoff = [
@@ -422,15 +426,15 @@
         ongoing = end - now;
 
         if (ongoing >= 0) {
-          $('#' + dayoff[i][0] + ".Grid").show(); // showing the next holiday
+          $('#' + dayoff[i][0] + ".dayoff").show(); // showing the next holiday
           break; // exit the loop as soon as an ongoing holiday is found
         } else {
-          $('#' + dayoff[i][0] + ".Grid").hide(); // hiding the holiday which is expired
+          $('#' + dayoff[i][0] + ".dayoff").hide(); // hiding the holiday which is expired
         };
       };
         
     });  
-  </script>
+</script>
       <div id="footer" class="container60 Grid-column Grid-column--center">
     <div id="footer-text" class="Grid-column Grid-column--center">
         <h6>© <span id="theYear"></span> Hausärztliche Gemeinschaftspraxis</h6>
