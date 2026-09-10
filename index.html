@@ -216,10 +216,10 @@
 </div>
             </div-->
             <div id="normal-opening-hours" style="margin: 20px 0;">
-                <h3 class="note">Nächste Schließungszeiten :</h3>
                 
                     
                     <div id="0403" class="dayoff" style="display: none;">
+                        <h3 class="note">Nächste Schließungszeiten :</h3>
                         <div class="Grid Grid--middle">
                             <h3 class="note" style="margin-right: 10px;">03./06.04.</h3>
                             <h3 class="note">Karfreitag und Ostermontag</h3>
@@ -229,6 +229,7 @@
                 
                     
                     <div id="0403" class="dayoff" style="display: none;">
+                        <h3 class="note">Nächste Schließungszeiten :</h3>
                         <div class="Grid Grid--middle">
                             <h3 class="note" style="margin-right: 10px;">07.-10.04.</h3>
                             <h3 class="note">Praxis geschlossen</h3>
@@ -238,6 +239,7 @@
                 
                     
                     <div id="0407" class="dayoff" style="display: none;">
+                        <h3 class="note">Nächste Schließungszeiten :</h3>
                         <div class="Grid Grid--middle">
                             <h3 class="note" style="margin-right: 10px;">07.-10.04.</h3>
                             <h3 class="note">Praxis geschlossen</h3>
@@ -249,6 +251,7 @@
                 
                     
                     <div id="0501" class="dayoff" style="display: none;">
+                        <h3 class="note">Nächste Schließungszeiten :</h3>
                         <div class="Grid Grid--middle">
                             <h3 class="note" style="margin-right: 10px;">Fr. 01.05.</h3>
                             <h3 class="note">Tag der Arbeit</h3>
@@ -258,6 +261,7 @@
                 
                     
                     <div id="0514" class="dayoff" style="display: none;">
+                        <h3 class="note">Nächste Schließungszeiten :</h3>
                         <div class="Grid Grid--middle">
                             <h3 class="note" style="margin-right: 10px;">Do. 14.05.</h3>
                             <h3 class="note">Christi Himmelfahrt</h3>
@@ -267,6 +271,7 @@
                 
                     
                     <div id="0525" class="dayoff" style="display: none;">
+                        <h3 class="note">Nächste Schließungszeiten :</h3>
                         <div class="Grid Grid--middle">
                             <h3 class="note" style="margin-right: 10px;">Mo. 25.05.</h3>
                             <h3 class="note">Pfingstmontag</h3>
@@ -276,6 +281,7 @@
                 
                     
                     <div id="0604" class="dayoff" style="display: none;">
+                        <h3 class="note">Nächste Schließungszeiten :</h3>
                         <div class="Grid Grid--middle">
                             <h3 class="note" style="margin-right: 10px;">Do. 04.06.</h3>
                             <h3 class="note">Fronleichnam</h3>
@@ -285,6 +291,7 @@
                 
                     
                     <div id="0907" class="dayoff" style="display: none;">
+                        <h3 class="note">Nächste Schließungszeiten :</h3>
                         <div class="Grid Grid--middle">
                             <h3 class="note" style="margin-right: 10px;">07.-11.09.</h3>
                             <h3 class="note">Praxis geschlossen</h3>
@@ -295,10 +302,11 @@
                     </div>
                 
                     
-                    <div id="" class="dayoff" style="display: none;">
+                    <div id="1225" class="dayoff" style="display: none;">
+                        <h3 class="note">Nächste Schließungszeiten :</h3>
                         <div class="Grid Grid--middle">
-                            <h3 class="note" style="margin-right: 10px;"></h3>
-                            <h3 class="note"></h3>
+                            <h3 class="note" style="margin-right: 10px;">25.-26.12.</h3>
+                            <h3 class="note">Weihnachten</h3>
                         </div>
                         
                     </div>
@@ -568,11 +576,11 @@
           '2026-09-11']            // 4
         ,
       
-        [ '',                 // 0
-          '',               // 1    
-          '',               // 2
-          '',          // 3 
-          '']            // 4
+        [ '1225',                 // 0
+          'Weihnachten',               // 1    
+          '25.-26.12.',               // 2
+          '2026-12-25',          // 3 
+          '2026-12-26']            // 4
         
       
     ];
@@ -586,16 +594,20 @@
       /* show the next upcoming dayoff */
       for (i = 0; i < dayoff.length; i ++) {
         endDate = dayoff[i][4];
-        
+        startDate = dayoff[i][3];
+
         end_ms = new Date(endDate).getTime();
         end = Math.floor(end_ms / (1000 * 60 * 60 * 24));     // Time calculations for days
+        start_ms = new Date(startDate).getTime();
+        start = Math.floor(start_ms / (1000 * 60 * 60 * 24));     // Time calculations for days
         now_ms = new Date().getTime();
         console.log(Date());
         now = Math.floor(now_ms / (1000 * 60 * 60 * 24));     // Time calculations for days
   
+        future = start - now;
         ongoing = end - now;
 
-        if (ongoing >= 0) {
+        if (ongoing >= 0 && future <=30) {
           $('#' + dayoff[i][0] + ".dayoff").show(); // showing the next holiday
           break; // exit the loop as soon as an ongoing holiday is found
         } else {
